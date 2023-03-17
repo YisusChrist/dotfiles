@@ -1,0 +1,18 @@
+open_with micro
+open_with geany
+open_with code
+open_with a
+rename BraveSoftware
+rename Documents
+rename drone.py
+find 
+shell 
+shell .
+rename CIBER-2022-2023
+open_with 0
+open_with 1
+open_with 2
+open_with 
+shell less bo.py
+shell ls -l
+shell ls -l | wc -l

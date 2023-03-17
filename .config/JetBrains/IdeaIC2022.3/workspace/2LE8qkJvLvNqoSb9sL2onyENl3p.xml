@@ -1,0 +1,215 @@
+<project version="4">
+  <component name="BookmarksManager">
+    <option name="groups">
+      <GroupState>
+        <option name="name" value="IdeaProjects" />
+      </GroupState>
+    </option>
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="-1">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/tutorial/src/main/kotlin/Main.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="63">
+              <caret line="3" column="1" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tutorial/build.gradle.kts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="5" column="25" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tutorial/gradle.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="23" selection-start-column="23" selection-end-column="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTypeUsageLocalSummary">
+    <fileType name="JAVA">
+      <summary usageCount="1" lastUsed="1675619499381" />
+    </fileType>
+    <fileType name="Kotlin">
+      <summary usageCount="6" lastUsed="1675724677754" />
+    </fileType>
+    <fileType name="Properties">
+      <summary usageCount="2" lastUsed="1675724677826" />
+    </fileType>
+  </component>
+  <component name="IdeDocumentHistory">
+    <changedPaths>
+      <option value="$PROJECT_DIR$/tutorial/src/main/kotlin/Main.kt" />
+    </changedPaths>
+  </component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="$PROJECT_DIR$/.idea" />
+      </set>
+    </option>
+  </component>
+  <component name="LanguageUsageStatistics">
+    <language id="JAVA">
+      <summary usageCount="1" lastUsage="1675619499381" />
+    </language>
+    <language id="Properties">
+      <summary usageCount="2" lastUsage="1675724677826" />
+    </language>
+    <language id="kotlin">
+      <summary usageCount="6" lastUsage="1675724677754" />
+    </language>
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1" />
+    <panes>
+      <pane id="PackagesPane" />
+      <pane id="Course" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="IdeaProjects" type="b2602c69:ProjectViewProjectNode" />
+              <item name="IdeaProjects" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="RunConfigurationStartHistory">
+    <history>
+      <element setting="Kotlin.MainKt" executorId="Run" />
+    </history>
+  </component>
+  <component name="ToolWindowManager">
+    <editor active="true" />
+    <layoutV2>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24521276" />
+      <window_info id="Commit" order="1" weight="0.2505319" />
+      <window_info id="Structure" order="2" weight="0.2505319" />
+      <window_info anchor="bottom" id="Version Control" order="0" />
+      <window_info anchor="bottom" id="Problems" order="1" />
+      <window_info anchor="bottom" id="Problems View" order="2" />
+      <window_info anchor="bottom" id="Run" order="3" weight="0.3301217" />
+      <window_info anchor="bottom" id="Terminal" order="4" />
+      <window_info anchor="bottom" id="Build" order="5" visible="true" weight="0.3301217" />
+      <window_info anchor="bottom" id="Dependencies" order="6" show_stripe_button="false" />
+      <window_info anchor="right" content_ui="combo" id="Notifications" order="0" weight="0.25" />
+      <window_info anchor="right" id="Database" order="1" weight="0.25" />
+      <window_info anchor="right" id="Gradle" order="2" weight="0.2505319" />
+      <window_info anchor="right" id="Maven" order="3" weight="0.25" />
+      <window_info anchor="right" id="Kotlin Bytecode" order="4" weight="0.32999998" />
+      <window_info anchor="right" id="Web Inspector" order="5" weight="0.25" />
+    </layoutV2>
+    <recentWindows>
+      <value>Project</value>
+      <value>Run</value>
+      <value>Build</value>
+      <value>Kotlin Bytecode</value>
+      <value>Structure</value>
+      <value>Commit</value>
+      <value>Gradle</value>
+    </recentWindows>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="0" y="136" width="1024" height="851" key="#Project_Structure" timestamp="1675425172203">
+      <screen x="10" y="48" width="1900" height="1022" />
+    </state>
+    <state x="0" y="136" width="1024" height="851" key="#Project_Structure/10.48.1900.1022@10.48.1900.1022" timestamp="1675425172203" />
+    <state x="268" y="317" width="528" height="490" key="FileChooserDialogImpl" timestamp="1675620063406">
+      <screen x="10" y="48" width="1900" height="1022" />
+    </state>
+    <state x="268" y="317" width="528" height="490" key="FileChooserDialogImpl/10.48.1900.1022@10.48.1900.1022" timestamp="1675620063406" />
+    <state width="858" height="283" key="GridCell.Tab.0.bottom" timestamp="1675425360134">
+      <screen x="10" y="48" width="1900" height="1022" />
+    </state>
+    <state width="858" height="283" key="GridCell.Tab.0.bottom/10.48.1900.1022@10.48.1900.1022" timestamp="1675425360134" />
+    <state width="858" height="283" key="GridCell.Tab.0.center" timestamp="1675425360132">
+      <screen x="10" y="48" width="1900" height="1022" />
+    </state>
+    <state width="858" height="283" key="GridCell.Tab.0.center/10.48.1900.1022@10.48.1900.1022" timestamp="1675425360132" />
+    <state width="858" height="283" key="GridCell.Tab.0.left" timestamp="1675425360130">
+      <screen x="10" y="48" width="1900" height="1022" />
+    </state>
+    <state width="858" height="283" key="GridCell.Tab.0.left/10.48.1900.1022@10.48.1900.1022" timestamp="1675425360130" />
+    <state width="858" height="283" key="GridCell.Tab.0.right" timestamp="1675425360133">
+      <screen x="10" y="48" width="1900" height="1022" />
+    </state>
+    <state width="858" height="283" key="GridCell.Tab.0.right/10.48.1900.1022@10.48.1900.1022" timestamp="1675425360133" />
+    <state x="297" y="478" width="365" height="168" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1675619937455">
+      <screen x="10" y="48" width="1900" height="1022" />
+    </state>
+    <state x="297" y="478" width="365" height="168" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/10.48.1900.1022@10.48.1900.1022" timestamp="1675619937455" />
+    <state x="85" y="259" key="new project wizard" timestamp="1675620114790">
+      <screen x="10" y="48" width="1900" height="1022" />
+    </state>
+    <state x="85" y="259" key="new project wizard/10.48.1900.1022@10.48.1900.1022" timestamp="1675620114790" />
+    <state x="148" y="263" width="672" height="708" key="search.everywhere.popup" timestamp="1675619960348">
+      <screen x="10" y="48" width="1900" height="1022" />
+    </state>
+    <state x="148" y="263" width="672" height="708" key="search.everywhere.popup/10.48.1900.1022@10.48.1900.1022" timestamp="1675619960348" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/tutorial/src/main/kotlin/Main.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="63">
+          <caret line="3" column="1" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tutorial/build.gradle.kts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="5" column="25" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tutorial/gradle.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="23" selection-start-column="23" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI" />
+      <state key="GlobalLibrariesConfigurable.UI" />
+      <state key="JdkListConfigurable.UI" />
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>main|untitled</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI" />
+    </states>
+  </component>
+</project>

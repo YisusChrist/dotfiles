@@ -1,0 +1,9 @@
+<application>
+  <component name="Trusted.Paths">
+    <option name="TRUSTED_PROJECT_PATHS">
+      <map>
+        <entry key="$USER_HOME$/EPS/DADM-2022-2023/Cards" value="true" />
+      </map>
+    </option>
+  </component>
+</application>

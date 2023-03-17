@@ -1,0 +1,111 @@
+<project version="4">
+  <component name="BookmarksManager">
+    <option name="groups">
+      <GroupState>
+        <option name="name" value="tutorial" />
+      </GroupState>
+    </option>
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="-1">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/kotlin/Main.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="10" column="1" selection-end-line="10" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTypeUsageLocalSummary">
+    <fileType name="Kotlin">
+      <summary usageCount="4" lastUsed="1675724703850" />
+    </fileType>
+  </component>
+  <component name="IdeDocumentHistory">
+    <changedPaths>
+      <option value="$PROJECT_DIR$/src/main/kotlin/Main.kt" />
+    </changedPaths>
+  </component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="$PROJECT_DIR$/.idea" />
+      </set>
+    </option>
+  </component>
+  <component name="LanguageUsageStatistics">
+    <language id="kotlin">
+      <summary usageCount="4" lastUsage="1675724703851" />
+    </language>
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1" />
+    <panes>
+      <pane id="PackagesPane" />
+      <pane id="ProjectPane" />
+      <pane id="Course" />
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="TerminalArrangementManager">
+    <option name="myTabStates">
+      <TerminalTabState tabName="Local" currentWorkingDirectory="$PROJECT_DIR$/src/main/kotlin" commandHistoryFileName="tutorial-history" />
+    </option>
+  </component>
+  <component name="ToolWindowManager">
+    <editor active="true" />
+    <layoutV2>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24892473" />
+      <window_info id="Commit" order="1" weight="0.25" />
+      <window_info id="Structure" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Version Control" order="0" />
+      <window_info anchor="bottom" id="Problems" order="1" />
+      <window_info anchor="bottom" id="Problems View" order="2" />
+      <window_info anchor="bottom" id="Run" order="3" show_stripe_button="false" weight="0.3301217" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="4" visible="true" weight="0.3301217" />
+      <window_info anchor="bottom" id="Build" order="5" weight="0.3301217" />
+      <window_info anchor="bottom" id="Dependencies" order="6" show_stripe_button="false" />
+      <window_info anchor="right" content_ui="combo" id="Notifications" order="0" weight="0.25" />
+      <window_info anchor="right" id="Database" order="1" weight="0.25" />
+      <window_info anchor="right" id="Gradle" order="2" weight="0.25" />
+      <window_info anchor="right" id="Maven" order="3" weight="0.25" />
+      <window_info anchor="right" id="Web Inspector" order="4" weight="0.25" />
+    </layoutV2>
+    <recentWindows>
+      <value>Terminal</value>
+      <value>Run</value>
+      <value>Build</value>
+      <value>Project</value>
+    </recentWindows>
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="868" height="283" key="GridCell.Tab.0.bottom" timestamp="1675624167175">
+      <screen x="10" y="48" width="1900" height="1022" />
+    </state>
+    <state width="868" height="283" key="GridCell.Tab.0.bottom/10.48.1900.1022@10.48.1900.1022" timestamp="1675624167175" />
+    <state width="868" height="283" key="GridCell.Tab.0.center" timestamp="1675624167173">
+      <screen x="10" y="48" width="1900" height="1022" />
+    </state>
+    <state width="868" height="283" key="GridCell.Tab.0.center/10.48.1900.1022@10.48.1900.1022" timestamp="1675624167173" />
+    <state width="868" height="283" key="GridCell.Tab.0.left" timestamp="1675624167172">
+      <screen x="10" y="48" width="1900" height="1022" />
+    </state>
+    <state width="868" height="283" key="GridCell.Tab.0.left/10.48.1900.1022@10.48.1900.1022" timestamp="1675624167172" />
+    <state width="868" height="283" key="GridCell.Tab.0.right" timestamp="1675624167174">
+      <screen x="10" y="48" width="1900" height="1022" />
+    </state>
+    <state width="868" height="283" key="GridCell.Tab.0.right/10.48.1900.1022@10.48.1900.1022" timestamp="1675624167174" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/Main.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="10" column="1" selection-end-line="10" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

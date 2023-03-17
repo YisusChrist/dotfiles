@@ -1,0 +1,7 @@
+.encoding = "UTF-8"
+pref.lastUpdateCheckSec = "1678982354"
+pref.keyboardAndMouse.vmHotKey.enabled = "FALSE"
+pref.keyboardAndMouse.vmHotKey.count = "0"
+pref.vmplayer.firstRunDismissedVersion = "17.0.1"
+vmWizard.guestKey = "ubuntu"
+vmWizard.installMediaType = "later"

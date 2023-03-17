@@ -1,0 +1,11 @@
+[Desktop Entry]
+NoDisplay=true
+Version=1.0
+Encoding=UTF-8
+Type=X-XFCE-Helper
+X-XFCE-Category=MailReader
+X-XFCE-CommandsWithParameter=brave https://mail.google.com/mail/u/0/#inbox?compose=new&to="%s"
+Icon=brave
+Name=brave
+X-XFCE-Commands=brave
+

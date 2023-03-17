@@ -1,0 +1,196 @@
+<application>
+  <component name="ActionsLocalSummary">
+    <e n="$Delete">
+      <i c="2" l="1678709101398" />
+    </e>
+    <e n="$Redo">
+      <i c="26" l="1678708938155" />
+    </e>
+    <e n="$SelectAll">
+      <i c="10" l="1678709178541" />
+    </e>
+    <e n="$Undo">
+      <i c="41" l="1678708937647" />
+    </e>
+    <e n="Adtui.ZoomInAction">
+      <i c="3" l="1678479193335" />
+    </e>
+    <e n="Adtui.ZoomToFitAction">
+      <i c="1" l="1678479222912" />
+    </e>
+    <e n="Android.DeviceManager">
+      <i c="1" l="1678478739416" />
+    </e>
+    <e n="Android.OpenStringResourceEditor">
+      <i c="1" l="1678651418794" />
+    </e>
+    <e n="CodeCompletion">
+      <i c="1" l="1678651359676" />
+    </e>
+    <e n="CollapseAll">
+      <i c="2" l="1678478695549" />
+    </e>
+    <e n="EditorBackSpace">
+      <i c="20" l="1678709169204" />
+    </e>
+    <e n="EditorChooseLookupItem">
+      <i c="2" l="1678481614709" />
+    </e>
+    <e n="EditorChooseLookupItemReplace">
+      <i c="1" l="1678481593051" />
+    </e>
+    <e n="EditorCopy">
+      <i c="6" l="1678709179037" />
+    </e>
+    <e n="EditorDelete">
+      <i c="1" l="1678481596727" />
+    </e>
+    <e n="EditorDeleteToWordStart">
+      <i c="3" l="1678477966151" />
+    </e>
+    <e n="EditorDown">
+      <i c="37" l="1678709187213" />
+    </e>
+    <e n="EditorEnter">
+      <i c="10" l="1678708409704" />
+    </e>
+    <e n="EditorEscape">
+      <i c="2" l="1678651365346" />
+    </e>
+    <e n="EditorLeft">
+      <i c="1" l="1678479678413" />
+    </e>
+    <e n="EditorNextWord">
+      <i c="7" l="1678709185059" />
+    </e>
+    <e n="EditorNextWordWithSelection">
+      <i c="2" l="1678709187881" />
+    </e>
+    <e n="EditorPaste">
+      <i c="23" l="1678709181339" />
+    </e>
+    <e n="EditorPreviousWord">
+      <i c="1" l="1678478055014" />
+    </e>
+    <e n="EditorPreviousWordWithSelection">
+      <i c="16" l="1678709185367" />
+    </e>
+    <e n="EditorRight">
+      <i c="3" l="1678708671403" />
+    </e>
+    <e n="EditorTabsEntryPoint">
+      <i c="1" l="1678651351017" />
+    </e>
+    <e n="EditorUp">
+      <i c="1" l="1678709186838" />
+    </e>
+    <e n="ExpandAll">
+      <i c="2" l="1678478693453" />
+    </e>
+    <e n="Find">
+      <i c="1" l="1678479766069" />
+    </e>
+    <e n="GenerateJavadoc">
+      <i c="1" l="1678480941603" />
+    </e>
+    <e n="GotoAction">
+      <i c="1" l="1678650988683" />
+    </e>
+    <e n="HideAllWindows">
+      <i c="2" l="1678709011845" />
+    </e>
+    <e n="MakeGradleProject">
+      <i c="10" l="1678709202909" />
+    </e>
+    <e n="NewAndroidImageAsset">
+      <i c="1" l="1678481319713" />
+    </e>
+    <e n="Print">
+      <i c="1" l="1678651356183" />
+    </e>
+    <e n="Run">
+      <i c="13" l="1678709294116" />
+    </e>
+    <e n="SaveDocument">
+      <i c="12" l="1678708938829" />
+    </e>
+    <e n="ShowProjectStructureSettings">
+      <i c="2" l="1678479610224" />
+    </e>
+    <e n="ShowSettings">
+      <i c="3" l="1678479902434" />
+    </e>
+    <e n="Stop">
+      <i c="9" l="1678709308852" />
+    </e>
+    <e n="Switcher">
+      <i c="2" l="1678708127006" />
+    </e>
+    <e n="WelcomeScreen.CreateNewProject">
+      <i c="2" l="1678477421272" />
+    </e>
+    <e n="android.emulator.extended.controls">
+      <i c="2" l="1678479552179" />
+    </e>
+    <e n="android.emulator.power.button">
+      <i c="3" l="1678530815965" />
+    </e>
+    <e n="com.android.tools.adtui.actions.DropDownAction">
+      <i c="2" l="1678479199357" />
+    </e>
+    <e n="com.android.tools.adtui.workbench.AttachedToolWindow$HideAction">
+      <i c="1" l="1678479211010" />
+    </e>
+    <e n="com.android.tools.idea.configurations.TargetMenuAction">
+      <i c="2" l="1678479202958" />
+    </e>
+    <e n="com.android.tools.idea.configurations.TargetMenuAction$TogglePickBestAction">
+      <i c="1" l="1678479204097" />
+    </e>
+    <e n="com.android.tools.idea.editors.strings.action.ReloadStringResourcesAction">
+      <i c="3" l="1678709197275" />
+    </e>
+    <e n="com.android.tools.idea.editors.strings.action.RemoveKeysAction">
+      <i c="3" l="1678709066734" />
+    </e>
+    <e n="com.android.tools.idea.emulator.EmulatorToolWindowFactory$init$1">
+      <i c="4" l="1678492005110" />
+    </e>
+    <e n="com.android.tools.idea.rendering.GutterIconRenderer$GutterIconClickAction">
+      <i c="1" l="1678481713695" />
+    </e>
+    <e n="com.android.tools.idea.run.deployment.SelectDeviceAction">
+      <i c="3" l="1678481236057" />
+    </e>
+    <e n="com.intellij.find.SearchReplaceComponent$CloseAction">
+      <i c="1" l="1678479767574" />
+    </e>
+    <e n="com.intellij.notification.NotificationAction$Simple">
+      <i c="1" l="1678478476642" />
+    </e>
+    <e n="com.intellij.openapi.editor.impl.EditorMarkupModelImpl$StatusAction">
+      <i c="1" l="1678479278546" />
+    </e>
+    <e n="com.intellij.openapi.fileEditor.impl.tabActions.CloseTab">
+      <i c="4" l="1678709199769" />
+    </e>
+    <e n="com.intellij.openapi.project.DumbAwareAction$SimpleDumbAwareAction">
+      <i c="1" l="1678650989889" />
+    </e>
+    <e n="com.intellij.openapi.wm.impl.DockToolWindowAction">
+      <i c="4" l="1678492025019" />
+    </e>
+    <e n="com.intellij.toolWindow.ToolWindowHeader$HideAction">
+      <i c="8" l="1678709357652" />
+    </e>
+    <e n="com.intellij.toolWindow.ToolWindowHeader$ShowOptionsAction">
+      <i c="1" l="1678479626919" />
+    </e>
+    <e n="org.jetbrains.android.actions.CreateResourceFileAction">
+      <i c="1" l="1678650871815" />
+    </e>
+    <e n="org.jetbrains.android.actions.CreateTypedResourceFileAction">
+      <i c="4" l="1678709153142" />
+    </e>
+  </component>
+</application>

@@ -1,0 +1,20 @@
+00:00:00.020832 VirtualBox NAT Network 7.0.6 r155176 linux.amd64 (Feb 22 2023 15:36:54) release log
+00:00:00.020835 Log opened 2023-03-16T16:01:33.311660000Z
+00:00:00.020836 Build Type: release
+00:00:00.020839 OS Product: Linux
+00:00:00.020841 OS Release: 6.2.6-arch1-1
+00:00:00.020843 OS Version: #1 SMP PREEMPT_DYNAMIC Mon, 13 Mar 2023 17:02:08 +0000
+00:00:00.020868 DMI Product Name: OMEN by HP Laptop 15-dc0xxx
+00:00:00.020881 DMI Product Version: 
+00:00:00.020888 Firmware type: UEFI
+00:00:00.021687 Secure Boot: Disabled
+00:00:00.021747 Host RAM: 15803MB (15.4GB) total, 9010MB (8.7GB) available
+00:00:00.021750 Executable: /usr/lib/virtualbox/VBoxNetNAT
+00:00:00.021751 Process ID: 2392685
+00:00:00.021752 Package type: LINUX_64BITS_GENERIC (OSE)
+00:00:00.022199 IPv4 loopback mapping 0: 127.0.0.1=2
+00:00:00.023004 SUP: Opened VMMR0.r0 (/usr/lib/virtualbox/VMMR0.r0) at 0xXXXXXXXXXXXXXXXX.
+00:00:00.026399 netif NT0: mac 52:54:00:12:35:00
+00:00:00.026415 netif NT0: inet 10.0.2.1 netmask 255.255.255.0
+00:02:24.829983 run: shutdown
+00:02:24.830056 Terminating

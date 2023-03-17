@@ -1,0 +1,19 @@
+<application>
+  <component name="Trusted.Paths">
+    <option name="TRUSTED_PROJECT_PATHS">
+      <map>
+        <entry key="$USER_HOME$/EPS/DADM-2022-2023/IdeaProjects" value="true" />
+        <entry key="$USER_HOME$/EPS/DADM-2022-2023/tutorial" value="true" />
+        <entry key="$USER_HOME$/IdeaProjects/tutorial" value="true" />
+        <entry key="$USER_HOME$/IdeaProjects/untitled" value="true" />
+      </map>
+    </option>
+  </component>
+  <component name="Trusted.Paths.Settings">
+    <option name="TRUSTED_PATHS">
+      <list>
+        <option value="$USER_HOME$/EPS/DADM-2022-2023" />
+      </list>
+    </option>
+  </component>
+</application>

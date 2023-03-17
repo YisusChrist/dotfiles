@@ -1,0 +1,33 @@
+<application>
+  <component name="DimensionService">
+    <size key="GridCell.Tab.0.left.0.0.1920.1080" width="1818" height="283" />
+    <size key="GridCell.Tab.0.center.0.0.1920.1080" width="1818" height="283" />
+    <size key="GridCell.Tab.0.right.0.0.1920.1080" width="1818" height="283" />
+    <size key="GridCell.Tab.0.bottom.0.0.1920.1080" width="1818" height="283" />
+    <size key="GridCell.Tab.0.left.1920.0.1920.1080" width="1828" height="283" />
+    <size key="GridCell.Tab.0.center.1920.0.1920.1080" width="1828" height="283" />
+    <size key="GridCell.Tab.0.right.1920.0.1920.1080" width="1828" height="283" />
+    <size key="GridCell.Tab.0.bottom.1920.0.1920.1080" width="1828" height="283" />
+  </component>
+  <component name="WindowManager">
+    <frame x="2864" y="48" width="955" height="1022" extendedState="6" />
+  </component>
+  <component name="WindowStateApplicationService">
+    <state x="743" y="317" width="424" height="490" key="FileChooserDialogImpl" timestamp="1675724756868">
+      <screen x="10" y="48" width="1900" height="1022" />
+    </state>
+    <state x="743" y="317" width="424" height="490" key="FileChooserDialogImpl/10.48.1900.1022" timestamp="1675724756868" />
+    <state x="639" y="861" width="302" height="151" key="ProcessPopupWindow" timestamp="1675085007558">
+      <screen x="10" y="48" width="1900" height="1022" />
+    </state>
+    <state x="639" y="861" width="302" height="151" key="ProcessPopupWindow/10.48.1900.1022" timestamp="1675085007558" />
+    <state x="532" y="484" width="846" height="155" key="ide.config.custom.settings" timestamp="1675084184928">
+      <screen x="10" y="48" width="1900" height="1022" />
+    </state>
+    <state x="532" y="484" width="846" height="155" key="ide.config.custom.settings/10.48.1900.1022" timestamp="1675084184928" />
+    <state x="560" y="259" key="new project wizard" timestamp="1675724782224">
+      <screen x="10" y="48" width="1900" height="1022" />
+    </state>
+    <state x="560" y="259" key="new project wizard/10.48.1900.1022" timestamp="1675724782224" />
+  </component>
+</application>

@@ -1,0 +1,25 @@
+00:00:00.165458 VirtualBox GUI VM Selector Window 7.0.6 r155176 linux.amd64 (Feb 22 2023 15:36:54) release log
+00:00:00.165460 Log opened 2023-03-16T16:01:29.571114000Z
+00:00:00.165460 Build Type: release
+00:00:00.165462 OS Product: Linux
+00:00:00.165463 OS Release: 6.2.6-arch1-1
+00:00:00.165464 OS Version: #1 SMP PREEMPT_DYNAMIC Mon, 13 Mar 2023 17:02:08 +0000
+00:00:00.165481 DMI Product Name: OMEN by HP Laptop 15-dc0xxx
+00:00:00.165488 DMI Product Version: 
+00:00:00.165492 Firmware type: UEFI
+00:00:00.166354 Secure Boot: Disabled
+00:00:00.166387 Host RAM: 15803MB (15.4GB) total, 9180MB (8.9GB) available
+00:00:00.166389 Executable: /usr/lib/virtualbox/VirtualBox
+00:00:00.166390 Process ID: 2392168
+00:00:00.166390 Package type: LINUX_64BITS_GENERIC (OSE)
+00:00:00.166418 Qt version: 5.15.8
+00:00:00.167255 GUI: UIMediumEnumerator: Initial medium-enumeration finished!
+00:00:00.178156 GUI: UIMediumEnumerator: Medium-enumeration started...
+00:00:00.722648 GUI: UIDesktopWidgetWatchdog::sltHandleHostScreenAvailableGeometryCalculated: Screen 0 work area is actually resized to: 1920x48 x 1910x1022
+00:00:00.751112 GUI: UIDesktopWidgetWatchdog::sltHandleHostScreenAvailableGeometryCalculated: Screen 1 work area is actually resized to: 10x48 x 1910x1022
+00:00:00.767988 GUI: UIMediumEnumerator: Medium-enumeration finished!
+00:00:17.360381 GUI: UIMediumEnumerator: Medium-enumeration finished!
+00:00:20.048126 GUI: UIMediumEnumerator: Medium-enumeration finished!
+00:02:12.933365 GUI: UIMediumEnumerator: Medium-enumeration finished!
+00:02:30.869902 GUI: UICommon: Handling aboutToQuit request..
+00:02:31.788029 GUI: UICommon: aboutToQuit request handled!

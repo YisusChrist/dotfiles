@@ -1,0 +1,112 @@
+<application>
+  <component name="EduSettings">
+    <option name="javaUiLibrary" value="Swing" />
+  </component>
+  <component name="HyperskillSettings">
+    <option name="updateAutomatically" value="true" />
+    <HyperskillAccount>
+      <option name="tokenExpiresIn" value="1675120770" />
+      <option name="email" value="alejandro.gonzalezm02@estudiante.uam.es" />
+      <option name="fullname" value="Alejandro González Momblán" />
+      <option name="guest" value="false" />
+      <option name="hyperskillProjectId" />
+      <option name="id" value="399826654" />
+    </HyperskillAccount>
+  </component>
+  <component name="JdkInstallerHistory">
+    <option name="installedItems">
+      <installed-jdk>
+        <option name="fullText" value="Amazon Corretto 18.0.2" />
+        <option name="installDir" value="$USER_HOME$/.jdks/corretto-18.0.2" />
+        <option name="sha256" value="6e1ece082dc471ac5e126646794cd227a13ca3e536208775182c17086063e121" />
+        <option name="url" value="https://corretto.aws/downloads/resources/18.0.2.9.1/amazon-corretto-18.0.2.9.1-linux-x64.tar.gz" />
+        <option name="versionText" value="18.0.2" />
+      </installed-jdk>
+    </option>
+  </component>
+  <component name="NotRoamableUiSettings">
+    <option name="fontScale" value="1.0" />
+    <option name="fontSize" value="14.0" />
+  </component>
+  <component name="PropertyService"><![CDATA[{
+  "keyToString": {
+    "Edu.CourseCreator.Enabled": "true",
+    "Educational.recentCoursesFilled": "true",
+    "Educational.stepikOAuthReset": "true",
+    "InstalledPluginsSearchHistory": "sync\nsyn\ns\nsy",
+    "LayoutCode.optimizeImports": "true",
+    "LayoutCode.rearrangeEntries": "true",
+    "MarketplacePluginsSearchHistory": "sync",
+    "NewKotlinWizard.buildSystem.type": "GradleKotlinDsl",
+    "NewKotlinWizard.structure.groupId": "me.yisus_christ",
+    "NextRunPlatformUpdateBuild": "IC-223.8836.41",
+    "NextRunPlatformUpdateVersion": "2022.3.3",
+    "NonModalCommitCustomization.IsApplied": "true",
+    "PluginConfigurable.selectionTab": "1",
+    "RunOnceActivity.se.text.search": "true",
+    "SettingsSearchHistory": "font size\nfont si",
+    "appcds.runOnSecondStart": "IC-223.8836.35-e225c8e2664aef5c768bcc555568955199dbb97f8346771897a32f898e9713a6",
+    "ask.about.ctrl.y.shortcut.v2": "true",
+    "build.toolwindow.Build Output.selection.state": "com.intellij.build.BuildTreeConsoleView",
+    "build.toolwindow.Sync.selection.state": "com.intellij.build.BuildTreeConsoleView",
+    "bundled.plugins.list.saved.version": "IC-223.8836.35",
+    "com.intellij.ide.projectWizard.generators.JavaNewProjectWizard$Step.selectedStep": "IntelliJ",
+    "com.intellij.ide.wizard.NewProjectWizardLanguageStep.selectedStep": "Java",
+    "com.intellij.openapi.roots.ui.configuration.TabbedModuleEditor.selectedEditor": "Sources",
+    "defaultJdkConfigured": "true",
+    "eclipse.projects.detected": "",
+    "file.gist.reindex.count": "1",
+    "fileTypeChangedCounter": "1",
+    "fontSizeToResetConsole": "14.0",
+    "fontSizeToResetEditor": "14.0",
+    "got.it.tooltip.reader.mode.got.it": "1",
+    "gotit.previous.run": "IC-223.8617.56",
+    "ide.memory.adjusted": "true",
+    "ift.hide.welcome.screen.promo": "true",
+    "installed.kotlin.plugin.version": "223-1.8.0-release-345-IJ8836.35",
+    "kotlin.lastUpdateCheck": "1677581742622",
+    "last.imported.location": "/home/yisus_christ/EPS/DADM-2022-2023/IdeaProjects/tutorial/settings.gradle.kts",
+    "last_opened_file_path": "/home/yisus_christ/EPS/DADM-2022-2023",
+    "migrate.android.sdk.path.to.roamable.storage": "false",
+    "previousColorScheme": "_@user_Dark",
+    "project.wizard.group": "kotlin.newProjectWizard.builder",
+    "registry.to.advanced.settings.migration.build": "IC-223.8836.35",
+    "tasks.pass.word.conversion.enforced": "true"
+  },
+  "keyToStringList": {
+    "file.chooser.recent.files": [
+      "/home/yisus_christ/EPS/DADM-2022-2023",
+      "/home/yisus_christ/EPS/DADM-2022-2023/IdeaProjects/tutorial/settings.gradle.kts",
+      "/home/yisus_christ/EPS/DADM-2022-2023/IdeaProjects"
+    ],
+    "fileTypeDetectors": [
+      "com.intellij.ide.scratch.ScratchFileServiceImpl$Detector",
+      "com.android.tools.idea.sqlite.fileType.SqliteFileTypeDetector",
+      "com.android.tools.idea.profilers.capture.MemoryCaptureFileType$Detector",
+      "org.jetbrains.plugins.textmate.TextMateFileType$TextMateFileDetector"
+    ],
+    "kotlin-gradle-user-dirs": [
+      "/home/yisus_christ/.gradle"
+    ]
+  }
+}]]></component>
+  <component name="ShownTips">{
+  &quot;shownTips&quot;: {
+    &quot;SpeedSearch&quot;: 1675086020796,
+    &quot;CtrlW&quot;: 1675086043127,
+    &quot;Rename&quot;: 1675086041783,
+    &quot;FocusProjectToolWindow&quot;: 1675418091435,
+    &quot;SearchEverywhere&quot;: 1675086036265,
+    &quot;CommentCode&quot;: 1675086042476,
+    &quot;FindReplaceToggle&quot;: 1675086039393,
+    &quot;ShowUsages&quot;: 1675086040330,
+    &quot;ContextActions&quot;: 1675086028604,
+    &quot;FindInPath&quot;: 1675086041147
+  }
+}</component>
+  <component name="TerminalCommandHistoryManager">
+    <command-history-files>
+      <command-history-file filename="tutorial-history" project-path="$USER_HOME$/IdeaProjects/tutorial" last-access-time="1675724703749" />
+    </command-history-files>
+  </component>
+</application>
