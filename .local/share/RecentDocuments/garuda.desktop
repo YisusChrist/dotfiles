@@ -1,0 +1,6 @@
+[Desktop Entry]
+Icon=inode-directory
+Name=garuda
+Type=Link
+URL[$e]=file:///run/media/garuda
+X-KDE-LastOpenedWith=
