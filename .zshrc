@@ -138,13 +138,13 @@ alias gp='git push origin master'
 
 # Personal
 alias e='exit'
-alias instaloader='instaloader --highlights --login=__pole_399188__ --no-profile-pic --no-metadata-json --no-compress-json --no-captions --filename-pattern {filename}'
+alias instaloader='instaloader --login=__pole_399188__ --no-profile-pic --no-metadata-json --no-compress-json --no-captions --filename-pattern {filename} --highlights --no-video-thumbnails'
 alias tlmgr='/usr/share/texmf-dist/scripts/texlive/tlmgr.pl --usermode'
 alias rm='trash'
 alias m='micro'
 
 # Personal scripts
-export PATH=$HOME/.local/bin/.Scripts:$PATH
+export PATH=$HOME/.local/bin/scripts:$PATH
 
 # Python bin packages
 export PATH=$HOME/.local/bin/:$PATH
@@ -155,6 +155,52 @@ export DEBUGINFOD_URLS="https://debuginfod.archlinux.org"
 # Default preferred editor
 export EDITOR='micro'
 
+JAVA_HOME=/usr/lib/jvm/java-8-openjdk
+export JAVA_HOME
+export PATH=$PATH:$JAVA_HOME
+
+# NodeJS managers
+export VOLTA_HOME="$HOME/.volta"
+export PATH="$VOLTA_HOME/bin:$PATH"
+source /usr/share/nvm/init-nvm.sh
+
+# enable color support of ls, less and man, and also add handy aliases
+if [ -x /usr/bin/dircolors ]; then
+    test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
+    export LS_COLORS="$LS_COLORS:ow=30;44:" # fix ls color for folders with 777 permissions
+
+    alias ls='ls --color=auto'
+    #alias dir='dir --color=auto'
+    #alias vdir='vdir --color=auto'
+
+    alias grep='grep --color=auto'
+    alias fgrep='fgrep --color=auto'
+    alias egrep='egrep --color=auto'
+    alias diff='diff --color=auto'
+    alias ip='ip --color=auto'
+
+    export LESS_TERMCAP_mb=$'\E[1;31m'     # begin blink
+    export LESS_TERMCAP_md=$'\E[1;36m'     # begin bold
+    export LESS_TERMCAP_me=$'\E[0m'        # reset bold/blink
+    export LESS_TERMCAP_so=$'\E[01;33m'    # begin reverse video
+    export LESS_TERMCAP_se=$'\E[0m'        # reset reverse video
+    export LESS_TERMCAP_us=$'\E[1;32m'     # begin underline
+    export LESS_TERMCAP_ue=$'\E[0m'        # reset underline
+
+    # Take advantage of $LS_COLORS for completion as well
+    zstyle ':completion:*' list-colors "${(s.:.)LS_COLORS}"
+    zstyle ':completion:*:*:kill:*:processes' list-colors '=(#b) #([0-9]#)*=0=01;31'
+fi
+
+# ZSH Auto Suggestions
+if [ -f ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh ]; then
+	source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
+fi
+
+# enable command-not-found if installed
+if [ -f /usr/share/doc/find-the-command/ftc.zsh ]; then
+	source /usr/share/doc/find-the-command/ftc.zsh
+fi
 
 # Neofetch
 neofetch
