@@ -3,3 +3,5 @@
 	email = alejandro.gonzalezm02@estudiante.uam.es
 [core]
 	autocrlf = input
+[init]
+	defaultBranch = main

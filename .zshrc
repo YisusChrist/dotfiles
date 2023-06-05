@@ -70,8 +70,7 @@ zstyle ':omz:update' mode disabled  # disable automatic updates
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git)
-
+plugins=(git zsh-autosuggestions zsh-syntax-highlighting)
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
@@ -134,14 +133,22 @@ alias gcl='git clone --depth 1'
 alias gi='git init'
 alias ga='git add'
 alias gc='git commit -m'
-alias gp='git push origin master'
+alias gp='git push origin main'
 
 # Personal
 alias e='exit'
-alias instaloader='instaloader --login=__pole_399188__ --no-profile-pic --no-metadata-json --no-compress-json --no-captions --filename-pattern {filename} --highlights --no-video-thumbnails'
+alias instaloader='instaloader --login=__pole_399188__ --no-profile-pic --no-metadata-json --no-compress-json --no-captions --filename-pattern {filename} --highlights --no-video-thumbnails --sanitize-paths'
 alias tlmgr='/usr/share/texmf-dist/scripts/texlive/tlmgr.pl --usermode'
 alias rm='trash'
 alias m='micro'
+alias interfaces='sudo nmcli d'
+
+# Python virtualenv wrapper
+export WORKON_HOME=$HOME/.virtualenvs
+export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3
+export VIRTUALENVWRAPPER_VIRTUALENV_ARGS=' -p /usr/bin/python3 '
+export PROJECT_HOME=$HOME/Devel
+source $HOME/.local/bin/virtualenvwrapper.sh
 
 # Personal scripts
 export PATH=$HOME/.local/bin/scripts:$PATH
@@ -192,15 +199,29 @@ if [ -x /usr/bin/dircolors ]; then
     zstyle ':completion:*:*:kill:*:processes' list-colors '=(#b) #([0-9]#)*=0=01;31'
 fi
 
+# https://github.com/zsh-users/zsh-autosuggestions
 # ZSH Auto Suggestions
-if [ -f ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh ]; then
-	source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
-fi
+#if [ -f ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh ]; then
+#	source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
+#fi
 
+# https://github.com/pkasemir/find-the-command
 # enable command-not-found if installed
 if [ -f /usr/share/doc/find-the-command/ftc.zsh ]; then
 	source /usr/share/doc/find-the-command/ftc.zsh
 fi
+
+# pip zsh completion start
+function _pip_completion {
+  local words cword
+  read -Ac words
+  read -cn cword
+  reply=( $( COMP_WORDS="$words[*]" \
+             COMP_CWORD=$(( cword-1 )) \
+             PIP_AUTO_COMPLETE=1 $words[1] 2>/dev/null ))
+}
+compctl -K _pip_completion pip
+# pip zsh completion end
 
 # Neofetch
 neofetch

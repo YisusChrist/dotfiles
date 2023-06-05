@@ -1,0 +1,100 @@
+#!/usr/bin/env bash
+
+# Remove files with same names but different extension
+# It is specified to remove pictures ".jpg"
+# Example:
+#    Before execution:
+#    - file1 = <name>.jpg
+#    - file2 = <name>.mp4
+#    After execution:
+#    - file2 = <name>.mp4
+
+# Using external library for error-handling
+# https://github.com/niieani/bash-oo-framework
+
+# Set up log file
+LOG_FILE="dup_rm.log"
+date_format=$(date +"%Y-%m-%d %T")
+
+# Log Level examples:
+#log_msg "INFO" "Starting script execution..."
+#log_msg "WARNING" "File not found: $file_name"
+#log_msg "ERROR" "An error occurred: $error_message"
+
+# Define log_msg function
+log_msg() {
+	local level=$1
+	local message=$2
+	echo "$message"
+	echo "[$date_format] $level: $message" >> "$LOG_FILE"
+}
+
+# Start the session
+echo "[$date_format] INFO: Starting session" >> "$LOG_FILE"
+
+# Check if a path argument is provided
+if [ -z "$1" ]; then
+	log_msg "ERROR"	 "Please provide a path as an argument."
+	exit -1
+fi
+
+# Define extension for files to remove and files to keep
+remove_ext=".jpg"
+
+log_msg "INFO" "Searching for duplicate files..."
+
+# Clean duplicated files with same name and extension
+# -r : recursively search for files in subdirectories
+# -d : delete duplicate files
+# -N : preserve the first file, remove subsequent duplicates
+# TODO: Fix error on try-catch
+num_removed=$(fdupes -r -d -N $1 | grep "[-]" | wc -l)
+log_msg "INFO" "Removed $num_removed duplicate files with fdupes."
+
+# Initialize counter for number of files removed
+total_counter=0
+
+log_msg "INFO" "Searching for directories..."
+
+# Find all directories at depth level 1 in the provided path
+for dir in $(find "$1" -mindepth 1 -maxdepth 1 -type d);
+do
+	log_msg "INFO" " [*] Processing directory $dir"
+	
+    # Initialize counter for number of files removed in this directory
+    dir_counter=0
+
+    # Find all unique file names without extensions in this directory
+    for i in $(find "$dir" -exec bash -c 'basename "$0" ".${0##*.}"' {} \; | sort | uniq --repeate);
+    do
+        # Find all files with the same base name as $i and a .jpg extension
+        # Sort them by filename and select only the ones ending in ".jpg"
+        # Store the results in variable $j
+        j=$(find "$dir" -name "$i*" -printf '%p\n' | sort -n | grep "$remove_ext")
+
+        # If files with .jpg extension were found, remove them and increment the counters
+        if [ -n "$j" ]; then
+			rm "$j"
+			counter=$(echo "$j" | wc -l)
+			dir_counter=$((dir_counter+counter))
+			total_counter=$((total_counter+counter))
+        fi
+    done
+
+    # Print number of files removed in this directory if there were any
+    if [ "$dir_counter" -gt 0 ]; then
+        log_msg "INFO" "     Removed $dir_counter files"
+    else
+		log_msg "INFO" "     Nothing to remove"
+    fi
+done
+
+echo ""
+
+num_dirs=$(ls -d "$1"/*/ | wc -l)
+
+# Print total number of files removed
+log_msg "INFO" "Processed $num_dirs directories."
+log_msg "INFO" "Total files removed: $total_counter."
+
+echo "[$date_format] INFO: End of session" >> "$LOG_FILE"

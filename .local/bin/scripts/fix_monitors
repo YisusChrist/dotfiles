@@ -1,0 +1,12 @@
+#!/bin/bash
+
+# notify-send "Detecting monitors..." --expire-time=750
+
+if [[ $(xrandr | grep " connected" | wc -l) == "2" ]]; then
+    xrandr --auto
+    xrandr --output $(xrandr | grep " connected" | awk '{print($1)}' | sed -n '2 p') --above $(xrandr | grep " connected" | awk '{print($1)}' | sed -n '1 p')
+    nitrogen --restore
+else
+    xrandr --auto
+    nitrogen --restore
+fi

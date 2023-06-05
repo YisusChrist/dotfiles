@@ -1,0 +1,23 @@
+#!/bin/bash
+
+# Define an array of file extensions to scan for duplicates
+extensions=("jpg" "jfif" "webp" "mp4")
+
+# Loop through each file extension
+for ext in "${extensions[@]}"
+do
+	# Scan for duplicate files with the current extension
+	find . -type f -name "*(1).${ext}" -print
+	count=$(find . -type f -name "*(1).${ext}" | wc -l)
+	echo "Total $ext dups found: $count"
+	echo ""
+
+	# Ask user if they want to delete the duplicate files
+	read -p "Do you want to delete the files? [Y/N]: " cond
+	if [[ ( $cond == "Y" ) ]]; then
+		echo "Deleting the found files..."
+		find . -type f -name "*.(1).${ext}" -exec rm -rf {} \;
+		echo "Done"
+	fi
+	echo ""
+done

@@ -1,0 +1,4 @@
+#!/usr/bin/python3
+# EASY-INSTALL-SCRIPT: 'f.lux-indicator-applet==2.0.1rc0','fluxgui'
+__requires__ = 'f.lux-indicator-applet==2.0.1rc0'
+__import__('pkg_resources').run_script('f.lux-indicator-applet==2.0.1rc0', 'fluxgui')
