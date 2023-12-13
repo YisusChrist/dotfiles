@@ -31,4 +31,4 @@ These dotfiles are not intended to be used as a daily driving medium, I have onl
 
 - [ ] Change ZSH extensions to Zinit.
 
-Note: Forked / Inspired by [SolDoesTec](hhttps://github.com/soldoestech/hyprland)
+Note: Forked / Inspired by [SolDoesTech](https://github.com/soldoestech/hyprland)
