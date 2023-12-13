@@ -1,0 +1,37 @@
+\l
+\dt
+\h
+\help
+\l
+\c template0
+\du
+\?
+\q
+\q
+\q
+\l
+\dt
+\d album
+\t album
+\d album
+\d album
+SELECT autor FROM album;
+SELECT autor, nombre FROM album;
+SELECT * FROM album;
+\
+\q
+\dt
+\q
+\dt
+\d *
+\dt
+\d log4net-last-part-to-20230708
+SELECT * FROM log4net-last-part-to-20230708;
+SELECT * FROM "log4net-last-part-to-20230708";
+\copy log4net-last-part-to-20230708 to "bbva-log.csv" csv;
+\copy "log4net-last-part-to-20230708" to "bbva-log.csv" csv;
+\q
+\d log4net-last-part-to-20230708
+\copy "log4net-last-part-to-20230708" to "bbva-log.csv" csv;
+\q
+\q

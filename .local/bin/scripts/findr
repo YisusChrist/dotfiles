@@ -1,0 +1,173 @@
+#!/usr/bin/env python3
+
+"""
+@file     findr
+@date     22/09/2022
+@version  0.3
+@license  GNU General Public License v2.0
+@author   Julio Cabria
+"""
+
+import os
+import sys
+from colorama import Fore, Style
+from contextlib import suppress
+
+
+def args(positional=[]):
+
+    args_dict = {}
+
+    # Store positional arguments
+    tail = len(positional)
+    for i, pos_arg in enumerate(positional):
+        with suppress(IndexError):
+            if str(sys.argv[i+1]).startswith("-"):
+                tail = i
+                break
+            value = sys.argv[i+1]
+            args_dict[pos_arg] = value
+
+    # Store flags
+    for i in range(tail+1, len(sys.argv)):
+        try:
+            value = str(sys.argv[i]).split("=")[1]
+        except IndexError:
+            value = True
+        args_dict[str(sys.argv[i]).split("=")[0]] = value
+
+    return args_dict
+
+
+def rec_find(fname, key, max_depth):
+
+    buffer, found = "", False
+
+    if max_depth > 0:
+
+        if os.path.isfile(fname):
+            with suppress(Exception):
+                buffer, found = search_in_file(fname, key, buffer)
+
+            if found:
+                print(Fore.YELLOW + fname + Style.RESET_ALL + "\n" + buffer)
+
+        elif os.path.isdir(fname):
+            _ = [rec_find(os.path.join(fname, f), key, max_depth=max_depth-1)
+                 for f in os.listdir(fname)]
+
+
+def rec_filename_find(fname, key, max_depth):
+
+    buffer = ""
+
+    if max_depth > 0:
+
+        buffer, found = search_in_filename(fname, key, buffer)
+        if found:
+            print(buffer)
+
+        if os.path.isdir(fname):
+            _ = [rec_filename_find(os.path.join(fname, f), key, max_depth=max_depth-1)
+                 for f in os.listdir(fname)]
+
+
+def search_in_filename(fname, key, buffer):
+
+    buffer, found = "", False
+
+    if key in fname:
+        start_idx = fname.index(key)
+        end_idx = start_idx + len(key)
+        buffer = fname[:start_idx] + Fore.GREEN + \
+            fname[start_idx:end_idx] + Style.RESET_ALL + fname[end_idx:]
+        found = True
+
+    return buffer, found
+
+
+def search_in_file(fname, key, buffer):
+
+    found = False
+
+    with open(fname, 'r') as f:
+
+        for line_num, line in enumerate(f):
+
+            if key in line:
+                found, column_num = True, line.find(key)
+
+                location_text = f"{Fore.BLUE}Line {line_num + 1}, "
+                location_text += f"Column {column_num + 1}:{Style.RESET_ALL}"
+
+                higlight = line.strip().replace(
+                    key, f"{Fore.GREEN}{key}{Style.RESET_ALL}")
+
+                if higlight.index(key) > 20:
+                    higlight = higlight[higlight.index(key)-20:]
+
+                if len(higlight) > 40:
+                    higlight = higlight[:40]
+
+                addition = location_text + " " + higlight
+
+                if addition[-1] != '\n':
+                    addition += '\n'
+
+                buffer += addition
+
+    return buffer, found
+
+
+def main() -> int:
+    """
+    Main function
+    """
+
+    arg = args(["key"])
+
+    query = arg.get("key", None)
+    mode = arg.get("--mode", "contents")
+    depth = arg.get("--max-depth", 999)
+
+    if not query or "--help" in arg:
+        print("\nUsage: findr [key] [flags]")
+        print("Flags:")
+        print("--mode=contents|filenames")
+        print("--max-depth=999\n")
+        return 0
+
+    if mode == "contents":
+        print(f"\n{Fore.GREEN}Searching contents...{Fore.RESET}")
+        funct = rec_find
+
+    elif mode == "filenames":
+        print(f"\n{Fore.GREEN}Searching filenames...{Fore.RESET}")
+        funct = rec_filename_find
+
+    else:
+        print("\nUsage: findr [key] [flags]")
+        print("Flags:")
+        print("--mode=contents|filenames")
+        print("--max-depth=999\n")
+        return 0
+
+    files = os.listdir(os.getcwd())
+
+    print()
+
+    try:
+
+        for fname in files:
+            with suppress(Exception):
+                funct(fname, query, max_depth=int(depth))
+
+        if mode == "filenames":
+            print()
+
+    except KeyboardInterrupt:
+        print(f"\n{Fore.RED}Cancelled{Fore.RESET}\n")
+
+
+if __name__ == "__main__":
+    main()

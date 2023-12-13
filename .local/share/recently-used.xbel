@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xbel version="1.0"
+      xmlns:bookmark="http://www.freedesktop.org/standards/desktop-bookmarks"
+      xmlns:mime="http://www.freedesktop.org/standards/shared-mime-info"
+>
+  <bookmark href="file:///" added="2023-07-05T13:08:31.909280Z" modified="2023-12-12T01:04:43.866337Z" visited="2023-07-05T13:08:31.909283Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="inode/directory"/>
+        <bookmark:applications>
+          <bookmark:application name="Thunar" exec="&apos;thunar %u&apos;" modified="2023-12-12T01:04:43.866333Z" count="4"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home" added="2023-07-05T13:08:34.634077Z" modified="2023-12-12T01:12:34.684335Z" visited="2023-07-05T13:08:34.634080Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="inode/directory"/>
+        <bookmark:applications>
+          <bookmark:application name="Thunar" exec="&apos;thunar %u&apos;" modified="2023-12-12T01:12:34.684332Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/yisus_christ" added="2023-07-05T13:08:36.225006Z" modified="2023-12-12T01:12:35.511631Z" visited="2023-07-05T13:08:36.225010Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="inode/directory"/>
+        <bookmark:applications>
+          <bookmark:application name="Thunar" exec="&apos;thunar %u&apos;" modified="2023-12-12T01:12:35.511628Z" count="7"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/yisus_christ/.config" added="2023-07-10T15:35:01.888898Z" modified="2023-12-12T01:13:22.213797Z" visited="2023-07-10T15:35:01.888900Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="inode/directory"/>
+        <bookmark:applications>
+          <bookmark:application name="Thunar" exec="&apos;thunar %u&apos;" modified="2023-12-12T01:13:22.213794Z" count="10"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/yisus_christ/Documents/development" added="2023-07-16T14:07:23.274088Z" modified="2023-12-12T02:30:29.560740Z" visited="2023-07-16T14:07:23.274090Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="inode/directory"/>
+        <bookmark:applications>
+          <bookmark:application name="Thunar" exec="&apos;thunar %u&apos;" modified="2023-10-01T15:16:11.586889Z" count="6"/>
+          <bookmark:application name="code" exec="&apos;code %u&apos;" modified="2023-12-12T02:30:29.560735Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/yisus_christ/Public" added="2023-08-05T15:51:33.190274Z" modified="2023-12-12T01:04:41.356478Z" visited="2023-08-05T15:51:33.190277Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="inode/directory"/>
+        <bookmark:applications>
+          <bookmark:application name="Thunar" exec="&apos;thunar %u&apos;" modified="2023-12-12T01:04:41.356475Z" count="4"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///run/media/yisus_christ/Data/Downloads" added="2023-11-12T21:04:27.858801Z" modified="2023-11-12T21:04:27.858811Z" visited="2023-11-12T21:04:27.858805Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="inode/directory"/>
+        <bookmark:applications>
+          <bookmark:application name="Thunar" exec="&apos;thunar %u&apos;" modified="2023-11-12T21:04:27.858807Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///run/media/yisus_christ/Data/Downloads/firmware" added="2023-11-12T21:04:28.898642Z" modified="2023-11-12T21:04:28.898650Z" visited="2023-11-12T21:04:28.898644Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="inode/directory"/>
+        <bookmark:applications>
+          <bookmark:application name="Thunar" exec="&apos;thunar %u&apos;" modified="2023-11-12T21:04:28.898646Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/yisus_christ/wireless-info.txt" added="2023-12-12T01:03:20.368378Z" modified="2023-12-12T01:03:20.368388Z" visited="2023-12-12T01:03:20.368381Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/plain"/>
+        <bookmark:groups>
+          <bookmark:group>geany</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="geany" exec="&apos;geany %u&apos;" modified="2023-12-12T01:03:20.368384Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///boot" added="2023-12-12T01:04:44.867311Z" modified="2023-12-12T01:04:44.867319Z" visited="2023-12-12T01:04:44.867313Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="inode/directory"/>
+        <bookmark:applications>
+          <bookmark:application name="Thunar" exec="&apos;thunar %u&apos;" modified="2023-12-12T01:04:44.867315Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///dev" added="2023-12-12T01:04:47.256935Z" modified="2023-12-12T01:04:47.256944Z" visited="2023-12-12T01:04:47.256937Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="inode/directory"/>
+        <bookmark:applications>
+          <bookmark:application name="Thunar" exec="&apos;thunar %u&apos;" modified="2023-12-12T01:04:47.256939Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///timeshift" added="2023-12-12T01:04:51.228712Z" modified="2023-12-12T01:04:51.228721Z" visited="2023-12-12T01:04:51.228714Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="inode/directory"/>
+        <bookmark:applications>
+          <bookmark:application name="Thunar" exec="&apos;thunar %u&apos;" modified="2023-12-12T01:04:51.228718Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///tmp" added="2023-12-12T01:04:55.655884Z" modified="2023-12-12T01:04:55.655894Z" visited="2023-12-12T01:04:55.655888Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="inode/directory"/>
+        <bookmark:applications>
+          <bookmark:application name="Thunar" exec="&apos;thunar %u&apos;" modified="2023-12-12T01:04:55.655890Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/yisus_christ/.cache" added="2023-12-12T01:12:44.772637Z" modified="2023-12-12T01:12:44.772647Z" visited="2023-12-12T01:12:44.772640Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="inode/directory"/>
+        <bookmark:applications>
+          <bookmark:application name="Thunar" exec="&apos;thunar %u&apos;" modified="2023-12-12T01:12:44.772642Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/yisus_christ/.cache/.fr-Y9UX81" added="2023-12-12T01:12:46.330551Z" modified="2023-12-12T01:12:46.330560Z" visited="2023-12-12T01:12:46.330554Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="inode/directory"/>
+        <bookmark:applications>
+          <bookmark:application name="Thunar" exec="&apos;thunar %u&apos;" modified="2023-12-12T01:12:46.330557Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/yisus_christ/.cache/.fr-Y9UX81/1%20-%20inWXyXz.jpg" added="2023-12-12T01:12:47.267752Z" modified="2023-12-12T01:12:47.267762Z" visited="2023-12-12T01:12:47.267754Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/jpeg"/>
+        <bookmark:applications>
+          <bookmark:application name="Thunar" exec="&apos;thunar %u&apos;" modified="2023-12-12T01:12:47.267758Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="computer:///" added="2023-12-12T23:50:36.320105Z" modified="2023-12-12T23:50:36.320112Z" visited="2023-12-12T23:50:36.320107Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/octet-stream"/>
+        <bookmark:applications>
+          <bookmark:application name="Thunar" exec="&apos;thunar %u&apos;" modified="2023-12-12T23:50:36.320109Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///run/media/yisus_christ/Data" added="2023-12-12T23:50:43.635520Z" modified="2023-12-12T23:50:43.635529Z" visited="2023-12-12T23:50:43.635523Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="inode/directory"/>
+        <bookmark:applications>
+          <bookmark:application name="Thunar" exec="&apos;thunar %u&apos;" modified="2023-12-12T23:50:43.635526Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///run/media/yisus_christ/Data/Desktop" added="2023-12-12T23:50:46.148837Z" modified="2023-12-12T23:50:46.148845Z" visited="2023-12-12T23:50:46.148840Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="inode/directory"/>
+        <bookmark:applications>
+          <bookmark:application name="Thunar" exec="&apos;thunar %u&apos;" modified="2023-12-12T23:50:46.148843Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///run/media/yisus_christ/Data/Desktop/dotfiles" added="2023-12-12T23:50:46.933065Z" modified="2023-12-12T23:50:46.933073Z" visited="2023-12-12T23:50:46.933067Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="inode/directory"/>
+        <bookmark:applications>
+          <bookmark:application name="Thunar" exec="&apos;thunar %u&apos;" modified="2023-12-12T23:50:46.933071Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///run/media/yisus_christ/Data/Desktop/dotfiles/.bashrc" added="2023-12-12T23:51:13.428769Z" modified="2023-12-12T23:51:13.428778Z" visited="2023-12-12T23:51:13.428771Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/x-shellscript"/>
+        <bookmark:groups>
+          <bookmark:group>geany</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="geany" exec="&apos;geany %u&apos;" modified="2023-12-12T23:51:13.428774Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///run/media/yisus_christ/Data/Desktop/dotfiles/.bashrc.bak" added="2023-12-12T23:51:18.325492Z" modified="2023-12-12T23:51:26.210938Z" visited="2023-12-12T23:51:18.325494Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/plain"/>
+        <bookmark:groups>
+          <bookmark:group>geany</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="Thunar" exec="&apos;thunar %u&apos;" modified="2023-12-12T23:51:18.325496Z" count="1"/>
+          <bookmark:application name="geany" exec="&apos;geany %u&apos;" modified="2023-12-12T23:51:26.210935Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+</xbel>

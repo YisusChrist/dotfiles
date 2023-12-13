@@ -1,0 +1,1289 @@
+: 1689507830:0;ifconfig
+: 1689507867:0;sudo ifconfig wlp4s0 up
+: 1689507872:0;rfkill
+: 1689507879:0;sudo rfkill unblock all
+: 1689507881:0;rfkill
+: 1689507883:0;sudo ifconfig wlp4s0 up
+: 1689507967:0;m /etc/NetworkManager/NetworkManager.conf
+: 1689507988:0;man 5 NetworkManager.conf
+: 1689508120:0;m /etc/NetworkManager/conf.d/wifi-rand-mac.conf
+: 1689508197:0;nmcli connection show
+: 1689508226:0;ip link show
+: 1689508243:0;nmcli connection up "WIFI NeoDestroyer"
+: 1689508300:0;man nmcli
+: 1689509224:0;ifconfig
+: 1689509236:0;e
+: 1689509462:0;ee
+: 1689509464:0;e
+: 1689510238:0;history | grep /boot
+: 1689510256:0;df -k
+: 1689510267:0;df
+: 1689510276:0;e
+: 1689510866:0;man dc
+: 1689511028:0;e
+: 1689513154:0;cd Documents
+: 1689513155:0;cd dotfiles
+: 1689513187:0;md $HOME/.local/bin/scripts
+: 1689513203:0;cp -r .local/bin/scripts $HOME/.local/bin/scripts
+: 1689513219:0;ls
+: 1689513223:0;ll
+: 1689513532:0;cd ~
+: 1689513544:0;cd Documents
+: 1689513545:0;ls
+: 1689513552:0;md development
+: 1689513555:0;cd development
+: 1689513559:0;gcl https://github.com/YisusChrist/instaloader.git
+: 1689515346:0;e
+: 1689515531:0;lsblk
+: 1689515538:0;e
+: 1689516038:0;bmenu
+: 1689516306:0;rg -i -. Scrrenshot
+: 1689516327:0;locate Screenshot
+: 1689516343:0;man fd
+: 1689516354:0;fd --hidden Screenshot
+: 1689516522:0;e
+: 1689525804:0;trash-list
+: 1689525956:0;ll .local/share/Trash
+: 1689525962:0;ll .local/share/Trash/files
+: 1689525983:0;gdu .local/share/Trash/files
+: 1689526060:0;ll .local/share/Trash/files
+: 1689526063:0;gdu .local/share/Trash/files
+: 1689526084:0;ranger .local/share/Trash/files
+: 1689526176:0;hyprctl reload
+: 1689526232:0;ls /usr/share/backgrounds
+: 1689526234:0;ls /usr/share/backgrounds/archlinux
+: 1689526242:0;thunar /usr/share/backgrounds/archlinux
+: 1689526780:0;feh
+: 1689526830:0;feh /usr/share/backgrounds/archlinux/archbtw.png 
+: 1689526864:0;xdg-open /usr/share/backgrounds/archlinux/archbtw.png 
+: 1689527091:0;bmenu
+: 1689527111:0;xdg-open /usr/share/backgrounds/archlinux/archbtw.png 
+: 1689527207:0;systemctl --user --type=service
+: 1689527238:0;bmenu
+: 1689527265:0;systemctl status xdg-
+: 1689527272:0;systemctl status xdg-desktop-portal
+: 1689527278:0;systemctl status xdg-desktop-portal.service
+: 1689527301:0;systemctl --user status xdg-desktop-portal
+: 1689527310:0;sudo systemctl --user start xdg-desktop-portal
+: 1689527350:0;printenv GTK_USE_PORTAL
+: 1689527412:0;bmenu
+: 1689527460:0;xdg-open /usr/share/backgrounds/archlinux/archbtw.png 
+: 1689527505:0;e
+: 1689527511:0;xdg-open /usr/share/backgrounds/archlinux/archbtw.png 
+: 1689527517:0;feh /usr/share/backgrounds/archlinux/archbtw.png 
+: 1689527527:0;e
+: 1689527581:0;brave
+: 1689527593:0;brave &
+: 1689527630:0;e
+: 1689527662:0;icat 
+: 1689527740:0;kitty icat /usr/share/backgrounds/archlinux/archbtw.png 
+: 1689527768:0;m $ZDOTDIR/.zsh_aliases
+: 1689527809:0;source $ZDOTDIR/.zshrc
+: 1689527812:0;e
+: 1689527848:0;icat https://static-cdn.jtvnw.net/jtv_user_pictures/da99ca95-5234-4538-abba-f107f5e8401f-profile_image-70x70.png
+: 1689527851:0;e
+: 1689528310:0;brave --version
+: 1689528678:0;bmenu
+: 1689528750:0;e
+: 1689529703:0;bmenu
+: 1689529983:0;sudo -iu postgres
+: 1689530586:0;locale
+: 1689530615:0;postgres --version
+: 1689530763:0;systemctl status postgresql.service 
+: 1689530770:0;sudo systemctl enable postgresql.service 
+: 1689530787:0;sudo systemctl restart postgresql.service 
+: 1689530789:0;systemctl status postgresql.service 
+: 1689531585:0;sudo -iu postgres
+: 1689531690:0;e
+: 1689531706:0;createdb myDatabaseName
+: 1689531726:0;psql -d myDatabaseName
+: 1689531861:0;m /var/lib/postgres/data/pg_hba.conf
+: 1689531871:0;sudo micro /var/lib/postgres/data/pg_hba.conf
+: 1689531892:0;sudo nvim /var/lib/postgres/data/pg_hba.conf
+: 1689531910:0;nvim
+: 1689531915:0;sudo nvim
+: 1689531922:0;nvim /var/lib/postgres/data/pg_hba.conf
+: 1689532045:0;sudo micro /var/lib/postgres/data/pg_hba.conf
+: 1689532061:0;xdg-open /var/lib/postgres/data/pg_hba.conf
+: 1689532065:0;sudo xdg-open /var/lib/postgres/data/pg_hba.conf
+: 1689532150:0;ps | grep pg_hba.conf
+: 1689532155:0;btop
+: 1689532204:0;sudo xdg-open /var/lib/postgres/data/pg_hba.conf
+: 1689532218:0;btop
+: 1689532229:0;sudo xdg-open /var/lib/postgres/data/pg_hba.conf
+: 1689532356:0;btop
+: 1689532371:0;sudo micro /var/lib/postgres/data/pg_hba.conf
+: 1689532511:0;sudo micro /var/lib/postgres/data/postgresql.conf
+: 1689532811:0;cd Downloads
+: 1689533163:0;man tee
+: 1689533179:0;ls
+: 1689533211:0;psql -a 2-musica.sql
+: 1689533309:0;cat 2-musica.sql | psql | tee -a sql.log
+: 1689533453:0;psql
+: 1689533471:0;psql -U yisus_christ
+: 1689533491:0;psql -U yisus_christ -D myDatabaseName
+: 1689533497:0;psql -U yisus_christ -d myDatabaseName
+: 1689533507:0;psql -d myDatabaseName
+: 1689533532:0;cat 2-musica.sql | psql -d myDatabaseName | tee -a sql.log
+: 1689533552:0;psql -d myDatabaseName
+: 1689533645:0;createdb bbva-log
+: 1689533650:0;psql -d bbva-log
+: 1689533839:0;ls
+: 1689533846:0;less sql.log
+: 1689533848:0;rm sql.log
+: 1689533855:0;man logname
+: 1689533859:0;logname
+: 1689533863:0;whoami
+: 1689533875:0;less log4net-bbva-20230707122308-20230707-092315.backup
+: 1689533955:0;psql -d bbva-log < log4net-bbva-20230707122308-20230707-092315.backup
+: 1689533967:0;man pg_restore
+: 1689534002:0;pg_restore -d bbva-log log4net-bbva-20230707122308-20230707-092315.backup
+: 1689534008:0;psql -d bbva-log
+: 1689534446:0;man head
+: 1689534451:0;head bbva-log.csv
+: 1689535180:0;head -n 1 bbva-log.csv
+: 1689535240:0;psql -d bbva-log
+: 1689535680:0;rm \"bbva-log.csv\"
+: 1689535681:0;ls
+: 1689535702:0;icat sabrina-vaz-boob.png
+: 1689535704:0;e
+: 1689614530:0;bmenu
+: 1689614641:0;sudo visudo
+: 1689614653:0;visudo
+: 1689614659:0;man visudo
+: 1689614665:0;bmenu
+: 1689614738:0;sudo visudo
+: 1689614781:0;vim
+: 1689614884:0;sudo visudo
+: 1689614908:0;warch ls /run/media
+: 1689614912:0;watch ls /run/media
+: 1689614981:0;sudo cp /etc/sudoers /etc/sudoers.bak
+: 1689614985:0;sudo visudo
+: 1689615251:0;man sudo
+: 1689615259:0;sudo -V
+: 1689615357:0;man sudo
+: 1689615469:0;sudo -l
+: 1689615623:0;man sudo
+: 1689615626:0;sudo visudo
+: 1689615799:0;less /etc/sudo.conf
+: 1689615826:0;ll /etc/sudoers.d/
+: 1689615829:0;sudo ll /etc/sudoers.d/
+: 1689615833:0;sudo ls -l /etc/sudoers.d/
+: 1689615900:0;sudo micro /etc/sudoers
+: 1689615972:0;sudo visudo
+: 1689616039:0;reset
+: 1689616043:0;neofetch
+: 1689616049:0;sudo pacman -V
+: 1689616061:0;sudo pacman -h
+: 1689616063:0;e
+: 1689616067:0;sudo pacman -h
+: 1689616088:0;e
+: 1689616093:0;sudo -l
+: 1689616120:0;sudo micro /etc/sudoers
+: 1689616164:0;perl -e 'print(("A" x 100 . "\x{00}") x 50)' | sudo -S id
+: 1689616193:0;socat pty,link=/tmp/pty,waitslave exec:"perl -e 'print((\"A\" x 100 . chr(0x15)) x 50)'" &
+: 1689616202:0;socat
+: 1689616212:0;socat pty,link=/tmp/pty,waitslave exec:"perl -e 'print((\"A\" x 100 . chr(0x15)) x 50)'" &
+: 1689616232:0;sudo -S -k id < /tmp/pty
+: 1689616243:0;btop
+: 1689616270:0;q
+: 1689616275:0;btop
+: 1689616397:0;e
+: 1689616403:0;btop
+: 1689616416:0;man gpu
+: 1689616419:0;which gpu
+: 1689616431:0;ls .local/bin/scripts
+: 1689616433:0;ll .local/bin/scripts
+: 1689616453:0;mv .local/bin/scripts/scripts .local/bin/scripts
+: 1689616459:0;mv .local/bin/scripts/scripts/* .local/bin/scripts/
+: 1689616462:0;ll .local/bin/scripts
+: 1689616472:0;rm .local/bin/scripts/scripts
+: 1689616474:0;ll .local/bin/scripts
+: 1689616481:0;source $ZDOTDIR/.zshrc
+: 1689616483:0;reset
+: 1689616488:0;gpu_monitor
+: 1689616504:0;pipx install gpustat
+: 1689616510:0;gpu_monitor
+: 1689616529:0;gpu_monitor -h
+: 1689616556:0;which gpu_monitor
+: 1689616562:0;nvim /home/yisus_christ/.local/bin/scripts/gpu_monitor
+: 1689616611:0;gpu_monitor -h
+: 1689616614:0;e
+: 1689616763:0;bmenu
+: 1689616780:0;e
+: 1689622317:0;ifconfig
+: 1689622436:0;nmcli connection show
+: 1689622449:0;history | grep wifi
+: 1689622456:0;rfkill
+: 1689622476:0;sudo lshw -class network
+: 1689622484:0;nmcli connection show
+: 1689622488:0;rfkill
+: 1689622490:0;sudo lshw -class network
+: 1689622576:0;man rfkill
+: 1689622622:0;m /etc/NetworkManager/conf.d/wifi-rand-mac.conf
+: 1689622633:0;m /etc/NetworkManager/conf.d/wifi-powersave.conf
+: 1689622644:0;cat /etc/NetworkManager/conf.d/wifi-powersave.conf
+: 1689622682:0;systemctl suspend
+: 1689622773:0;ifconfig
+: 1689622779:0;rfkill
+: 1689622782:0;sudo lshw -class network
+: 1689622942:0;e
+: 1689622974:0;sudo lshw -class network
+: 1689623041:0;wget -N -t 5 -T 10 https://github.com/UbuntuForums/wireless-info/raw/master/wireless-info && chmod +x wireless-info
+: 1689623050:0;ls
+: 1689623054:0;less wireless-info
+: 1689623061:0;nvim wireless-info
+: 1689623076:0;wireless-info -h
+: 1689623082:0;chmod +x wireless-info
+: 1689623085:0;./wireless-info -h
+: 1689623097:0;less wireless-info.txt
+: 1689623109:0;lsb_release
+: 1689623114:0;./wireless-info
+: 1689623116:0;less wireless-info.txt
+: 1689623146:0;bmenu
+: 1689623157:0;yay -S pcmciautils
+: 1689623160:0;less wireless-info.txt
+: 1689623164:0;pccardctl
+: 1689623167:0;bmeny
+: 1689623169:0;bmenu
+: 1689623176:0;less wireless-info.txt
+: 1689623198:0;ifconfig
+: 1689623202:0;less wireless-info.txt
+: 1689623212:0;sudo rfkill unblock all
+: 1689623218:0;rfkill
+: 1689623228:0;sudo lshw -class network
+: 1689623237:0;nmcli connection show
+: 1689623251:0;./wireless-info
+: 1689623253:0;less wireless-info.txt
+: 1689623269:0;mokutil
+: 1689623273:0;./wireless-info
+: 1689623274:0;less wireless-info.txt
+: 1689623299:0;iwconfig
+: 1689623303:0;less wireless-info.txt
+: 1689623320:0;ifconfig
+: 1689623331:0;sudo ifconfig wlp4s0 up
+: 1689623347:0;sudo ip link set wlp4s0 up
+: 1689623388:0;less wireless-info.txt
+: 1689623395:0;./wireless-info
+: 1689623396:0;less wireless-info.txt
+: 1689623440:0;ifconfig -all
+: 1689623442:0;man ifconfig 
+: 1689623449:0;ifconfig -aç
+: 1689623450:0;ifconfig -a
+: 1689623465:0;ifconfig
+: 1689623509:0;less wireless-info.txt
+: 1689623579:0;systemctl status NetworkManager
+: 1689623643:0;ifconfig
+: 1689623676:0;sudo lshw -class network
+: 1689623682:0;less wireless-info.txt
+: 1689623875:0;sudo ./wireless-info
+: 1689623880:0;less wireless-info.txt
+: 1689623938:0;iwlist
+: 1689623951:0;ifconfig
+: 1689623955:0;iwlist enp7s0
+: 1689624052:0;echo 1  | sudo tee /sys/bus/pci/rescan
+: 1689624059:0;less /sys/bus/pci/rescan
+: 1689624062:0;ifconfig
+: 1689624075:0;man tee
+: 1689624124:0;ifconfig
+: 1689624127:0;sudo lshw -class network
+: 1689624156:0;sudo ./wireless-info
+: 1689624166:0;less wireless-info.txt
+: 1689624227:0;iw
+: 1689624232:0;sudo ./wireless-info
+: 1689624233:0;less wireless-info.txt
+: 1689624248:0;m /etc/modprobe.d/iwlmvm.conf
+: 1689624262:0;cat /etc/modprobe.d/iwlmvm.conf
+: 1689624271:0;less wireless-info.txt
+: 1689624405:0;rfkill
+: 1689624498:0;dmesg
+: 1689624502:0;sudo dmesg
+: 1689624511:0;sudo dmesg | grep wifi
+: 1689624516:0;sudo dmesg | grep net
+: 1689624551:0;modprobe -r rtw89_8852ce
+: 1689624553:0;sudo modprobe -r rtw89_8852ce
+: 1689624556:0;ifconfig
+: 1689624559:0;sudo lshw -class network
+: 1689624568:0;rfkill
+: 1689624604:0;nmcli connection show
+: 1689624611:0;ip link show
+: 1689624636:0;sudo systemctl restart NetworktworkManager
+: 1689624648:0;sudo systemctl restart NetworkManager
+: 1689624656:0;ifconfig
+: 1689624659:0;sudo lshw -class network
+: 1689624671:0;sudo ./wireless-info
+: 1689624673:0;less wireless-info.txt
+: 1689624695:0;bmenu
+: 1689624749:0;sudo modprobe -r realtek
+: 1689624781:0;modprobe rtw89_8852ce
+: 1689624783:0;sudo modprobe rtw89_8852ce
+: 1689624786:0;ifconfig
+: 1689624789:0;sudo lshw -class network
+: 1689624800:0;bmenu
+: 1689624838:0;systemctl status wpa_supplicant.service 
+: 1689624879:0;sudo ip link set wlp4s0 up
+: 1689624883:0;ifconfig
+: 1689624885:0;ifconfig -a
+: 1689624891:0;nmcli connection show
+: 1689624898:0;sudo ifconfig wlp4s0 up
+: 1689624913:0;reboot
+: 1689624956:0;ifconfig -a
+: 1689624961:0;ifconfig
+: 1689624965:0;sudo ifconfig wlp4s0 up
+: 1689624975:0;sudo rfkill unblock all
+: 1689624975:0;sudo ifconfig wlp4s0 up
+: 1689624982:0;ifconfig
+: 1689624990:0;nmcli connection show
+: 1689625008:0;systemctl suspend
+: 1689625024:0;ifconfig
+: 1689625030:0;sudo rfkill unblock all
+: 1689625031:0;sudo ifconfig wlp4s0 up
+: 1689625044:0;e
+: 1689625070:0;ifconfig
+: 1689625074:0;sudo lshw -class network
+: 1689625125:0;man modprove
+: 1689625131:0;man modprobe
+: 1689625146:0;sudo modprobe -rv rtw89_pci
+: 1689625166:0;ifconfig
+: 1689625180:0;sudo lshw -class network
+: 1689625195:0;ip link show
+: 1689625214:0;lsmod
+: 1689625245:0;lsmod | grep rtw89_pci
+: 1689625279:0;sudo modprobe -rv rtw89_8852ce
+: 1689625287:0;lsmod | grep rtw89_pci
+: 1689625301:0;sudo modprobe -rv rtw89_pci
+: 1689625306:0;sudo modprobe -rv rtw89_pciE
+: 1689625308:0;sudo modprobe -rv rtw89_pci
+: 1689625312:0;ifconfig
+: 1689625316:0;sudo lshw -class network
+: 1689625390:0;modprobe rtw89_pci
+: 1689625392:0;sudo modprobe rtw89_pci
+: 1689625395:0;ifconfig
+: 1689625397:0;sudo lshw -class network
+: 1689625414:0;sudo systemctl restart NetworkManager
+: 1689625422:0;ifconfig
+: 1689625424:0;sudo lshw -class network
+: 1689625447:0;lsmod | grep rt
+: 1689625479:0;m /usr/lib/systemd/system-sleep/suspend_wifi
+: 1689625496:0;chmod 755 /usr/lib/systemd/system-sleep/suspend_wifi
+: 1689625500:0;sudo chmod 755 /usr/lib/systemd/system-sleep/suspend_wifi
+: 1689625509:0;ll /usr/lib/systemd/system-sleep/suspend_wifi
+: 1689625547:0;echo $?
+: 1689625608:0;reboot
+: 1689625660:0;ifconfig
+: 1689625663:0;ifconfig -a
+: 1689625668:0;sudo lshw -class network
+: 1689625685:0;systemctl status NetworkManager
+: 1689625692:0;systemctl status wpa_supplicant.service 
+: 1689625700:0;sudo systemctl restart NetworkManager
+: 1689625704:0;systemctl status NetworkManager
+: 1689625710:0;ifconfig -a
+: 1689625745:0;sudo lshw -class network
+: 1689625763:0;rm /usr/lib/systemd/system-sleep/suspend_wifi
+: 1689625767:0;sudo rm /usr/lib/systemd/system-sleep/suspend_wifi
+: 1689625770:0;ll /usr/lib/systemd/system-sleep/suspend_wifi
+: 1689625774:0;ll /usr/lib/systemd/system-sleep/
+: 1689625779:0;less /usr/lib/systemd/system-sleep/nvidia 
+: 1689625853:0;sudo dmesg | grep rtw
+: 1689625856:0;sudo dmesg | grep rt
+: 1689625867:0;lsmod
+: 1689625870:0;lsmod | grep rt
+: 1689625874:0;reboot
+: 1689625918:0;sudo lshw -class network
+: 1689625927:0;lsmod | grep rt
+: 1689625931:0;sudo modprobe rtw89_pci
+: 1689625940:0;history | grep modprobe
+: 1689625950:0;modprobe rtw89_8852ce
+: 1689625952:0;sudo modprobe rtw89_8852ce
+: 1689625955:0;lsmod
+: 1689625958:0;sudo lshw -class network
+: 1689625965:0;reboot
+: 1689626011:0;sudo lshw -class network
+: 1689626018:0;rfkill
+: 1689626023:0;ifconfig -a
+: 1689626031:0;history
+: 1689626052:0;cat /etc/modprobe.d/iwlmvm.conf
+: 1689626062:0;rm /etc/modprobe.d/iwlmvm.conf
+: 1689626065:0;sudo rm /etc/modprobe.d/iwlmvm.conf
+: 1689626068:0;reboot
+: 1689626112:0;ifconfig -a
+: 1689626116:0;sudo lshw -class networkç
+: 1689626121:0;sudo lshw -class network
+: 1689626129:0;history
+: 1689626150:0;sudo rfkill unblock all
+: 1689626158:0;sudo ifconfig wlp4s0 up
+: 1689626182:0;lsmod | grep real
+: 1689626200:0;sudo modprobe realtek
+: 1689626203:0;ifconfig -a
+: 1689626231:0;echo 1  | sudo tee /sys/bus/pci/rescan
+: 1689626234:0;ifconfig -a
+: 1689626237:0;sudo lshw -class network
+: 1689636194:0;ping google.com
+: 1689636196:0;e
+: 1689636388:0;cd Documents
+: 1689636390:0;cd development
+: 1689636392:0;nvim .
+: 1689636402:0;doom
+: 1689636514:0;vimtutor
+: 1689636575:0;nvim
+: 1689636652:0;cd ..
+: 1689636655:0;gcl https://github.com/pinnheads/neovim-tutor.git
+: 1689636660:0;cd neovim-tutor
+: 1689636661:0;ls
+: 1689636677:0;mv README.md neovim-tutor.md
+: 1689636686:0;mv neovim-tutor.md ..
+: 1689636689:0;ls ..
+: 1689636700:0;cd ..
+: 1689636705:0;cat neovim-tutor
+: 1689636710:0;rm neovim-tutor
+: 1689636714:0;cat neovim-tutor.md
+: 1689636734:0;cat neovim-tutor.md | glow
+: 1689636792:0;man glow
+: 1689636795:0;glow -h
+: 1689637088:0;m $ZDOTDIR/.zsh_aliases
+: 1689637098:0;nvim $ZDOTDIR/.zsh_aliases
+: 1689637111:0;nvim $ZDOTDIR/.zshrc
+: 1689637145:0;source $ZDOTDIR/.zshrc
+: 1689637156:0;cat neovim-tutor.md
+: 1689637161:0;cat neovim-tutor.
+: 1689637163:0;cat neovim-tutor.*
+: 1689637177:0;cp neovim-tutor.md neovim-tutor.txt
+: 1689637180:0;cat neovim-tutor.txt
+: 1689637187:0;rm neovim-tutor.txt
+: 1689637199:0;ls netquality
+: 1689637223:0;nvim netquality/netquality
+: 1689637268:0;nvim $ZDOTDIR/.zshenv
+: 1689637505:0;source $ZDOTDIR/.zshrc
+: 1689637510:0;reset
+: 1689637527:0;printenv SCRIPTS
+: 1689637530:0;e
+: 1689637534:0;printenv SCRIPTS
+: 1689637541:0;cd $SCRIPTS
+: 1689637558:0;cd ~/Documents/development
+: 1689637571:0;cd ..
+: 1689637581:0;cp netquality/netquality $SCRIPTS
+: 1689637588:0;ll $SCRIPTS
+: 1689637596:0;cd ..
+: 1689637602:0;netquality
+: 1689637693:0;which netquality
+: 1689637835:0;see
+: 1689637863:0;xdg-open Documents/neovim-tutor.md
+: 1689637920:0;man file 
+: 1689637928:0;file Documents/neovim-tutor.md
+: 1689638037:0;cat Documents/neovim-tutor.md
+: 1689638065:0;less Documents/neovim-tutor.md
+: 1689638070:0;less Documents/neovim-tutor.md | glow
+: 1689638089:0;cat Documents/neovim-tutor.md | less
+: 1689638095:0;cat Documents/neovim-tutor.md
+: 1689638103:0;cat Documents/neovim-tutor.md | glow | less
+: 1689638108:0;cat Documents/neovim-tutor.md | tail
+: 1689638113:0;cat Documents/neovim-tutor.md | head
+: 1689638144:0;cat Documents/neovim-tutor.md
+: 1689638177:0;power-usage-report
+: 1689638231:0;vimtutor
+: 1689638332:0;cat Documents/neovim-tutor.md
+: 1689639384:0;e
+: 1689698106:0;bash
+: 1689699517:0;micro .bashrc
+: 1689699517:0;exit
+: 1689698134:0;bash
+: 1689699517:0;cd Documents/
+: 1689699517:0;cd development/
+: 1689699517:0;ls
+: 1689699517:0;cd ..
+: 1689699517:0;cd ..
+: 1689699517:0;micro .config/starship.toml 
+: 1689699517:0;cd Documents/development/
+: 1689699517:0;ls ~/.*
+: 1689699517:0;ls ~/./.*
+: 1689699517:0;ls ~/.*
+: 1689699517:0;exit
+: 1689699445:0;bmenu
+: 1689699517:0;e
+: 1689705062:0;nvim .config/neofetch/config.conf
+: 1689705076:0;diff .config/neofetch/config.conf*
+: 1689705084:0;diff .config/neofetch/config.conf .config/neofetch/config.conf.bak
+: 1689705118:0;nvim .config/neofetch/config.conf.bak
+: 1689705135:0;diff .config/neofetch/config.conf*
+: 1689705142:0;nvim .config/neofetch/config.conf.bak
+: 1689705153:0;diff .config/neofetch/config.conf*
+: 1689705172:0;m .config/neofetch/config.conf
+: 1689705245:0;neofetch
+: 1689705335:0;diff .config/neofetch/config.conf*
+: 1689705417:0;mv .config/neofetch/config.conf.archcraft
+: 1689705431:0;mv .config/neofetch/config.conf .config/neofetch/config.conf.archcraft
+: 1689705449:0;cp .config/neofetch/config.conf.bak .config/neofetch/config.conf.arch
+: 1689705474:0;cp .config/neofetch/config.conf.arch .config/neofetch/config.conf
+: 1689705477:0;neofetch
+: 1689705569:0;neofetch -off
+: 1689705574:0;neofetch --off
+: 1689705581:0;neofetch -off
+: 1689705583:0;neofetch --off
+: 1689705617:0;m .config/neofetch/config.conf
+: 1689705673:0;ll .cache/
+: 1689705711:0;neofetch 
+: 1689705721:0;nvim .config/neofetch/config.conf
+: 1689705741:0;neofetch --ascii_colors
+: 1689705770:0;neofetch --ascii_distro="ubuntu"
+: 1689705786:0;neofetch --ascii_distro="Ubuntu"
+: 1689705793:0;neofetch --ascii_distro="OpenBSD"
+: 1689705809:0;neofetch --ascii_distro "OpenBSD"
+: 1689705813:0;neofetch --ascii_distro "Ubuntu"
+: 1689705823:0;neofetch -L --ascii_distro "Ubuntu"
+: 1689705834:0;neofetch -L --ascii_distro Ubuntu
+: 1689705839:0;neofetch -L --ascii_distro *
+: 1689705844:0;neofetch -L --ascii_distro AIX
+: 1689705859:0;neofetch -L --ascii_distro Alpine
+: 1689705865:0;neofetch -L --ascii_distro AlterLinux
+: 1689705878:0;neofetch -L --ascii_distro Arch
+: 1689705910:0;neofetch -L --ascii_distro Container_Linux
+: 1689705916:0;neofetch -L --ascii_distro Cleanjaro
+: 1689705921:0;neofetch -L --ascii_distro Clear_Linux
+: 1689705929:0;neofetch -L --ascii_distro Manjaro
+: 1689705932:0;neofetch -L --ascii_distro Mandriva
+: 1689706027:0;neofetch --backend caca
+: 1689706038:0;neofetch --backend "caca"
+: 1689706041:0;neofetch --backend="caca"
+: 1689706061:0;neofetch --backend chafa
+: 1689706088:0;neofetch --backend kitty
+: 1689706145:0;neofetch -L --ascii_distro Anarchy
+: 1689706262:0;neofetch
+: 1689706341:0;lolcat
+: 1689706462:0;neofetch | lolcat
+: 1689706539:0;neofetch --ascii "$(fortune | cowsay -W 30)" | lolcat
+: 1689706554:0;fortune.
+: 1689706556:0;fortune
+: 1689706623:0;rm /var/lib/pacman/db.lck
+: 1689706626:0;sudo rm /var/lib/pacman/db.lck
+: 1689706632:0;fortune
+: 1689706643:0;cowsay
+: 1689706683:0;neofetch --ascii "$(fortune | cowsay -W 30)" | lolcat
+: 1689706755:0;fortune
+: 1689706778:0;e
+: 1689706787:0;_fortune
+: 1689706793:0;_fortune -1
+: 1689706810:0;fortune
+: 1689706971:0;fortune-mod
+: 1689706973:0;fortune
+: 1689706990:0;neofetch --ascii "$(fortune | cowsay -W 30)" | lolcat
+: 1689707033:0;neofetch --ascii "$(fortune | cowsay -f dragon -W 30)" | lolcat
+: 1689707040:0;eç
+: 1689707041:0;e
+: 1689707043:0;neofetch --ascii "$(fortune | cowsay -f dragon -W 30)" | lolcat
+: 1689707061:0;man cowsay
+: 1689707759:0;linuxlogo
+: 1689707793:0;cbonsai
+: 1689707819:0;yay -S cbonsai
+: 1689707851:0;cbonsai
+: 1689707870:0;man cbonsai
+: 1689708431:0;e
+: 1689708435:0;neofetch --ascii "$(fortune | cowsay -f dragon -W 30)" | lolcat
+: 1689708471:0;m $ZDOTDIR/.zsh_aliases
+: 1689708497:0;e
+: 1689708622:0;yay -S arttime
+: 1689708687:0;arttime
+: 1689777663:0;systemctl status sddm
+: 1689778163:0;bmenu
+: 1689778288:0;e
+: 1689778414:0;cd Documents/development/
+: 1689778419:0;gcl https://github.com/cmatsuoka/asciiquarium.git
+: 1689778426:0;cd asciiquarium/
+: 1689778427:0;ls
+: 1689778428:0;ll
+: 1689778627:0;chmod +x asciiquarium
+: 1689778629:0;./asciiquarium
+: 1689778823:0;cat README
+: 1689778855:0;cpan
+: 1689778957:0;m $ZDOTDIR/.zshe
+: 1689778959:0;m $ZDOTDIR/.zshenv
+: 1689779056:0;cat README
+: 1689779066:0;sudo cpan Term::Animation
+: 1689779106:0;./asciiquarium
+: 1689779117:0;e
+: 1689779130:0;xdg-ninja
+: 1689779202:0;m $ZDOTDIR/.zsh_aliases
+: 1689779204:0;m $ZDOTDIR/.zshenv
+: 1689779226:0;m $ZDOTDIR/.zsh_aliases
+: 1689779261:0;less .zshrc
+: 1689779314:0;mv .zshrc $ZDOTDIR/.zshrc.arcolinux
+: 1689779317:0;xdg-ninja
+: 1689779342:0;mv $HOME/.wget-hsts $XDG_DATA_HOME/wget-hsts
+: 1689779361:0;mv $HOME/.psql_history $XDG_DATA_HOME/psql_history
+: 1689779367:0;psql -d bbva-log
+: 1689779375:0;psql -d myDatabaseName
+: 1689779383:0;l.
+: 1689779394:0;cat .psql_history
+: 1689779400:0;rm .psql_history
+: 1689779402:0;e
+: 1689779407:0;psql -d myDatabaseName
+: 1689779412:0;l.
+: 1689779415:0;xdg-ninja
+: 1689779439:0;m $ZDOTDIR/.zshenv
+: 1689779489:0;mv $HOME/.node_repl_history $XDG_DATA_HOME/node_repl_history
+: 1689779499:0;less "$XDG_DATA_HOME"
+: 1689779504:0;ll "$XDG_DATA_HOME"
+: 1689779514:0;s
+: 1689779517:0;e
+: 1689779527:0;bmenu
+: 1689779614:0;xdg-ninja
+: 1689782985:0;m .config/waybar/config.jsonc
+: 1689782996:0;xdg-ninja
+: 1689783025:0;less .Xauthority
+: 1689783168:0;mv .Xauthority .Xauthority.bak
+: 1689783173:0;reboot
+: 1689783237:0;l.
+: 1689783244:0;xdg-ninja
+: 1689783642:0;l.
+: 1689783662:0;xdg-ninja | cpan
+: 1689783666:0;xdg-ninja | grep cpan
+: 1689783670:0;xdg-ninja
+: 1689784886:0;ranger
+: 1689785743:0;xdg-ninja
+: 1689786575:0;locate spicetify
+: 1689786602:0;spicetify -h
+: 1689786624:0;spicetify path all
+: 1689786655:0;rm -rf .spicetify
+: 1689786659:0;rm -rf .config/spicetify
+: 1689786663:0;l.
+: 1689786679:0;curl -fsSL https://raw.githubusercontent.com/spicetify/spicetify-cli/master/install.sh | sh
+: 1689786696:0;l.
+: 1689786717:0;curl -fsSL https://raw.githubusercontent.com/spicetify/spicetify-cli/master/install.sh > spicetify_install.sh
+: 1689786720:0;m spicetify_install.sh
+: 1689786837:0;printenv ZDOTDIR
+: 1689786858:0;rm -rf .config/spicetify .spicetify
+: 1689786865:0;./spicetify_install.sh
+: 1689786871:0;chmod +x spicetify_install.sh
+: 1689786873:0;./spicetify_install.sh
+: 1689786893:0;m spicetify_install.sh
+: 1689786924:0;printenv SHELL
+: 1689787109:0;m spicetify_install.sh
+: 1689787153:0;rm -rf .config/spicetify .spicetify
+: 1689787155:0;./spicetify_install.sh
+: 1689787174:0;curl -fsSL https://raw.githubusercontent.com/spicetify/spicetify-cli/master/install.sh > spicetify_install.sh
+: 1689787182:0;ll $ZDOTDIR
+: 1689787197:0;m $ZDOTDIR/.zshrc
+: 1689787232:0;m $ZDOTDIR/.zshenv
+: 1689787851:0;e
+: 1689787856:0;spicetify path all
+: 1689787871:0;which spotify-launcher
+: 1689787891:0;locate config-xpui.ini
+: 1689787896:0;m /home/yisus_christ/.config/spicetify/config-xpui.ini
+: 1689787930:0;spicetify path all
+: 1689787932:0;e
+: 1689787934:0;spicetify path all
+: 1689787940:0;m $ZDOTDIR/.zshenv
+: 1689787943:0;spicetify path all
+: 1689787945:0;e
+: 1689787949:0;spicetify path all
+: 1689787956:0;m $ZDOTDIR/.zshrc
+: 1689787997:0;which spicetify
+: 1689788007:0;m $ZDOTDIR/.zshenv
+: 1689788137:0;mv .spicetify/* .config/spicetify
+: 1689788143:0;ll .config/spicetify
+: 1689788148:0;e
+: 1689788151:0;spicetify path all
+: 1689788153:0;spicetify path 
+: 1689788157:0;l.
+: 1689788162:0;ll .spicetify
+: 1689788170:0;rmdir .spicetify
+: 1689788178:0;l.
+: 1689788186:0;m spicetify_install.sh
+: 1689788208:0;m $ZDOTDIR/.zshenv
+: 1689788277:0;rm -rf .config/spicetify
+: 1689788288:0;m spicetify_install.sh
+: 1689788414:0;grep -q $HOME/.spicetify $ZDOTDIR/.zshrc
+: 1689788420:0;grep -q $HOME/.spicetify
+: 1689788423:0;man grep
+: 1689788449:0;grep -q .spicetify $ZDOTDIR/.zshrc
+: 1689788455:0;echo $?
+: 1689788461:0;grep -q $HOME/.spicetify $ZDOTDIR/.zshrc
+: 1689788462:0;echo $?
+: 1689788491:0;grep -q $HOME/.spicetify env
+: 1689788500:0;grep -q $HOME/.spicetify $env
+: 1689788507:0;$env
+: 1689788517:0;which env
+: 1689788527:0;grep -q $HOME/.spicetify $(env)
+: 1689788551:0;grep -q "$HOME/.spicetify" $(env)
+: 1689788573:0;man grep
+: 1689788594:0;grep XDG $ZDOTDIR/.zshenv
+: 1689788604:0;$(env)
+: 1689788617:0;$(env) | cat
+: 1689788622:0;env
+: 1689788628:0;env | less
+: 1689788650:0;grep XDG $(env | cat)
+: 1689844763:0;gcl --depth 1 https://github.com/dexpota/kitty-themes.git ~/.config/kitty/kitty-themes
+: 1689844867:0;ls .config/kitty/kitty-themes/themes
+: 1689844877:0;ll | wc -l
+: 1689845186:0;m $ZDOTDIR/.zshrc
+: 1689845554:0;e
+: 1689848148:0;$EDITOR $HOME/.zshrc
+: 1689848157:0;$EDITOR $ZDOTDIR/.zshrc
+: 1689848191:0;curl --max-time 10 -w '\n' http://ident.me
+: 1689848205:0;m $ZDOTDIR/.zsh_aliases
+: 1689848244:0;source $ZDOTDIR/.zshrc
+: 1689848251:0;whatis
+: 1689848261:0;man whatis 
+: 1689848279:0;man man
+: 1689848287:0;man curl
+: 1689848292:0;whatismyip
+: 1689848313:0;m $ZDOTDIR/.zsh_aliases
+: 1689848326:0;source $ZDOTDIR/.zshrc
+: 1689848330:0;whatismyip
+: 1689848336:0;m $ZDOTDIR/.zsh_aliases
+: 1689855695:0;whatis fzf
+: 1689855706:0;man fzf
+: 1689855741:0;printenv EDITOR
+: 1689855745:0;printenv VISUAL
+: 1689855750:0;printenv TERM
+: 1689855758:0;printenv TERMINFO
+: 1689855777:0;printenv BROWSER
+: 1689855792:0;m $ZDOTDIR/.zshe
+: 1689855794:0;m $ZDOTDIR/.zshenv
+: 1689855860:0;$([[ -n $DISPLAY && $(command -v firefox) ]] && echo 'firefox' || echo 'brave' || echo 'chromium')
+: 1689855878:0;[[ -n $DISPLAY && $(command -v firefox) ]] && echo 'firefox' || echo 'brave' || echo 'chromium'
+: 1689855886:0;command
+: 1689855888:0;man command
+: 1689855892:0;whatis command
+: 1689855897:0;command which
+: 1689855913:0;command -v
+: 1689855916:0;command -v which
+: 1689855928:0;command comm
+: 1689855930:0;command command
+: 1689856076:0;m $ZDOTDIR/.zshenv
+: 1689856207:0;C-x C-e
+: 1689856348:0;m $ZDOTDIR/.zshrc
+: 1689856392:0;source $ZDOTDIR/.zshrc
+: 1689856403:0;alias | grep instaloader
+: 1689856404:0;e
+: 1689856408:0;alias | grep instaloader
+: 1689856446:0;m $ZDOTDIR/.zshenv
+: 1689856473:0;ls $JAVA_HOME
+: 1689856479:0;java
+: 1689856740:0;bash <(curl -L zellij.dev/launch)
+: 1689856759:0;exit
+: 1689856789:0;cargo install --locked zellij
+: 1689857017:0;printenv PATH
+: 1689857024:0;printenv PATH | grep cargo
+: 1689857033:0;whatis printenv
+: 1689857080:0;$(command printenv | grep ".spicetify")
+: 1689857101:0;$(command printenv PATH | grep ".spicetify")
+: 1689857126:0;$(command $(printenv PATH) | grep ".spicetify")
+: 1689857137:0;$(command $(printenv PATH) | grep .spicetify)
+: 1689857150:0;$(command "printenv PATH" | grep .spicetify)
+: 1689857160:0;$(command printenv "PATH" | grep .spicetify)
+: 1689857172:0;$(command printenv "PATH" | grep bin)
+: 1689857189:0;[[ ":$PATH:" == *":$HOME/bin:"* ]]
+: 1689857192:0;echo $?
+: 1689857213:0;[[ ":$PATH:" == *":.local:"* ]]
+: 1689857215:0;echo $?
+: 1689857219:0;[[ ":$PATH:" == *":.locales:"* ]]
+: 1689857220:0;echo $?
+: 1691188755:0;exit
+: 1691188992:0;xdg-ninja
+: 1691189007:0;e
+: 1691249843:0;pkill emacs
+: 1691249845:0;e
+: 1691250208:0;diff Documents/development /run/media/yisus_christ/New\ Volume/Documents/development
+: 1691250246:0;e
+: 1691250481:0;findr
+: 1691250492:0;pipx install colorama
+: 1691250501:0;pip install colorama
+: 1691250508:0;python -m pip install --upgrade pip
+: 1691250515:0;pipx install --upgrade pip
+: 1691250522:0;python -m pip install --upgrade pip
+: 1691250532:0;python -m pip install --upgrade pip --break-system-packages
+: 1691250537:0;pip install colorama
+: 1691250540:0;pip install colorama --break-system-packages
+: 1691250545:0;findr
+: 1691250557:0;cd Documents/development/
+: 1691250570:0;cd instaloader
+: 1691250574:0;findr "verbose"
+: 1691250596:0;cd /run/media/yisus_christ/New\ Volume/Documents/development/instaloader
+: 1691250597:0;findr "verbose"
+: 1691250605:0;findr "-t"
+: 1691250613:0;e
+: 1691250643:0;findr "verbose"
+: 1691250647:0;e
+: 1691250852:0;gdu .local/share/Trash/files
+: 1691250877:0;e
+: 1691250979:0;pkill stacer
+: 1691250980:0;e
+: 1691251033:0;ll
+: 1691251038:0;ls
+: 1691251041:0;ls -l
+: 1691251053:0;man ln
+: 1691251098:0;ln -s Desktop /run/media/yisus_christ/New\ Volume/Desktop
+: 1691251102:0;ls -l
+: 1691251258:0;ln -s /home/yisus_christ/Desktop /run/media/yisus_christ/New\ Volume/Desktop
+: 1691251274:0;ls -l
+: 1691251308:0;ln -s "/home/yisus_christ/Desktop" "/run/media/yisus_christ/New\ Volume/Desktop"
+: 1691251443:0;ln -s /run/media/yisus_christ/New\ Volume/Desktop  /home/yisus_christ/Desktop
+: 1691251459:0;ln -s /run/media/yisus_christ/New\ Volume/Documents/  /home/yisus_christ/Documents
+: 1691251499:0;ln -s /run/media/yisus_christ/New\ Volume/Downloads/  /home/yisus_christ/Downloads
+: 1691251515:0;ln -s /run/media/yisus_christ/New\ Volume/Music  /home/yisus_christ/Music
+: 1691251532:0;ln -s /run/media/yisus_christ/New\ Volume/Pictures  /home/yisus_christ/Pictures
+: 1691251563:0;ln -s /run/media/yisus_christ/New\ Volume/Templates  /home/yisus_christ/Templates
+: 1691251579:0;ln -s /run/media/yisus_christ/New\ Volume/Videos  /home/yisus_christ/Videos
+: 1691251596:0;ls -l
+: 1691251796:0;e
+: 1691251800:0;ls -l
+: 1691251849:0;sudo fdisk -l
+: 1691251876:0;sudo blkid
+: 1691251939:0;sudo cp /etc/fstab /etc/fstab.bak
+: 1691251948:0;sudo micro /etc/fstab
+: 1691252076:0;ls /run/media/yisus_christ/New\ Volume/
+: 1691252085:0;e
+: 1691252196:0;sudo mount -a
+: 1691252203:0;sudo micro /etc/fstab
+: 1691252217:0;sudo mount -a
+: 1691252218:0;sudo micro /etc/fstab
+: 1691252227:0;sudo mount -a
+: 1691252229:0;sudo micro /etc/fstab
+: 1691252264:0;e
+: 1691252278:0;sudo mount -a
+: 1691252284:0;sudo micro /etc/fstab
+: 1691252304:0;ls -l
+: 1691252380:0;e
+: 1691252382:0;sudo micro /etc/fstab
+: 1691252503:0;sudo mv /etc/fstab /etc/fstab.new
+: 1691252509:0;sudo mv /etc/fstab.bak /etc/fstab
+: 1691252512:0;sudo micro /etc/fstab
+: 1691252530:0;sudo mount -a
+: 1691252533:0;reboot
+: 1691253535:0;ls
+: 1691253540:0;ls -l
+: 1691253592:0;m Desktop
+: 1691253605:0;m ./Desktop
+: 1691253623:0;ln -s /run/media/yisus_christ/Data/Videos  /home/yisus_christ/Videos
+: 1691253663:0;ln -s /run/media/yisus_christ/Data/Templates  /home/yisus_christ/Templates
+: 1691253674:0;ln -s /run/media/yisus_christ/Data/Pictures  /home/yisus_christ/Pictures
+: 1691253685:0;ln -s /run/media/yisus_christ/Data/Music  /home/yisus_christ/Music
+: 1691253699:0;ln -s /run/media/yisus_christ/Data/Downloads/  /home/yisus_christ/Downloads
+: 1691253713:0;ln -s /run/media/yisus_christ/Data/Documents/  /home/yisus_christ/Documents
+: 1691253723:0;ln -s /run/media/yisus_christ/Data/Desktop  /home/yisus_christ/Desktop
+: 1691253766:0;sudo micro /etc/fstab
+: 1691253777:0;sudo cp /etc/fstab /etc/fstab.bak
+: 1691253787:0;sudo mv /etc/fstab.new /etc/fstab
+: 1691253790:0;sudo micro /etc/fstab
+: 1691253802:0;sudo mount -a
+: 1691253811:0;e
+: 1691253864:0;ls -l
+: 1691253875:0;cd Downloads
+: 1691253876:0;ls
+: 1691253889:0;e
+: 1693484354:0;ping google.com
+: 1693484422:0;bmenu
+: 1693484787:0;e
+: 1693484855:0;btop
+: 1693484865:0;bmenu
+: 1693484914:0;e
+: 1693485264:0;ping google.com
+: 1693485301:0;reboot
+: 1696172662:0;cat .config/hypr/hyprland.conf
+: 1696172671:0;less .config/hypr/hyprland.conf
+: 1696172678:0;m .config/hypr/hyprland.conf
+: 1696172708:0;bmenu
+: 1696173025:0;reboot
+: 1696173227:0;power-usage-report
+: 1696173255:0;powertop
+: 1696173261:0;sudo powertop
+: 1696173308:0;e
+: 1696173478:0;m .config/hypr/hyprland.conf
+: 1696173499:0;hyprctl reload
+: 1696173522:0;m .config/hypr/hyprland.conf
+: 1696173926:0;hyprctl reload
+: 1696173929:0;bmenu
+: 1696173983:0;man install
+: 1696173989:0;pipx list
+: 1696174011:0;pip install pipdeptree
+: 1696174065:0;pip install pipdeptree --break-system-packages
+: 1696174069:0;pipdeptree
+: 1696174083:0;pip install pip3autoremove --break-system-packages
+: 1696174093:0;pip install pip3-autoremove --break-system-packages
+: 1696174099:0;pipdeptree
+: 1696174124:0;pip3-autoremove nvitop
+: 1696174162:0;pip3-autoremove --break-system-packages nvitop
+: 1696174176:0;pip3-autoremove nvitop --break-system-packages
+: 1696174194:0;pip uninstall nvitop
+: 1696174196:0;pip uninstall nvitop --break-system-packages
+: 1696174213:0;pipdeptree
+: 1696174230:0;pip uninstall jaraco.text --break-system-packages
+: 1696174243:0;pip3 uninstall jaraco.text --break-system-packages
+: 1696174253:0;pipdeptree
+: 1696174378:0;pip -h
+: 1696174381:0;which pip
+: 1696174383:0;which pip3
+: 1696174469:0;history | grep "pip install"
+: 1696174498:0;python -m pip uninstall jaraco.text
+: 1696174514:0;python -m pip uninstall jaraco.text --break-system-packages
+: 1696174525:0;sudo pip uninstall jaraco.text --break-system-packages
+: 1696174541:0;pipdeptree
+: 1696174562:0;sudo pip uninstall inflect --break-system-packages
+: 1696174565:0;pipdeptree
+: 1696174575:0;sudo pip uninstall nvitop --break-system-packages
+: 1696174589:0;pipdeptree
+: 1696174600:0;sudo pip uninstall pydantic --break-system-packages
+: 1696174603:0;pipdeptree
+: 1696174613:0;sudo pip uninstall requests --break-system-packages
+: 1696174696:0;sudo pip uninstall pip3-autoremove --break-system-packages
+: 1696174705:0;pipdeptree
+: 1696174713:0;sudo pip uninstall cryptography --break-system-packages
+: 1696174716:0;pipdeptree
+: 1696174736:0;sudo pip uninstall validate-pyproject --break-system-packages
+: 1696174747:0;sudo pip uninstall fastjsonschema --break-system-packages
+: 1696174758:0;sudo pip uninstall urllib3 --break-system-packages
+: 1696174761:0;pipdeptree
+: 1696174772:0;sudo pip uninstall trove-classifiers --break-system-packages
+: 1696174774:0;pipdeptree
+: 1696174783:0;sudo pip uninstall tomli --break-system-packages
+: 1696174786:0;pipdeptree
+: 1696174796:0;sudo pip uninstall termcolor --break-system-packages
+: 1696174798:0;pipdeptree
+: 1696174809:0;sudo pip uninstall Reflector --break-system-packages
+: 1696174812:0;pipdeptree
+: 1696174835:0;which trash
+: 1696174842:0;sudo pip uninstall trash-cli --break-system-packages
+: 1696174847:0;which trash
+: 1696174853:0;trashc-h
+: 1696174857:0;trash -h
+: 1696174870:0;sudo pip uninstall psutil --break-system-packages
+: 1696174876:0;sudo pip uninstall six --break-system-packages
+: 1696174890:0;sudo pip uninstall typing --break-system-packages
+: 1696174894:0;pipdeptree
+: 1696174906:0;sudo pip uninstall annotated-types --break-system-packages
+: 1696174908:0;pipdeptree
+: 1696174921:0;autocommand
+: 1696174938:0;sudo pip uninstall autocommand --break-system-packages
+: 1696174990:0;pipdeptree
+: 1696175001:0;sudo pip uninstall chardet --break-system-packages
+: 1696175006:0;sudo pip uninstall colorama --break-system-packages
+: 1696175017:0;pipdeptree
+: 1696175033:0;sudo pip uninstall numpy --break-system-packages
+: 1696175036:0;pipdeptree
+: 1696175044:0;sudo pip uninstall mako --break-system-packages
+: 1696175048:0;pipdeptree
+: 1696175058:0;sudo pip uninstall Markdown --break-system-packages
+: 1696175064:0;pipdeptree
+: 1696175072:0;sudo pip uninstall MarkupSafe --break-system-packages
+: 1696175074:0;pipdeptree
+: 1696175087:0;sudo pip uninstall jaraco.context --break-system-packages
+: 1696175095:0;sudo pip uninstall jaraco.functools --break-system-packages
+: 1696175106:0;sudo pip uninstall more-itertools --break-system-packages
+: 1696175109:0;pipdeptree
+: 1696175123:0;sudo pip uninstall cffi --break-system-packages
+: 1696175124:0;pipdeptree
+: 1696175134:0;sudo pip uninstall cachetools --break-system-packages
+: 1696175136:0;pipdeptree
+: 1696175146:0;sudo pip uninstall ordered-set --break-system-packages
+: 1696175147:0;pipdeptree
+: 1696175196:0;sudo pip uninstall idna --break-system-packages
+: 1696175199:0;pipdeptree
+: 1696175208:0;sudo pip uninstall ply --break-system-packages
+: 1696175211:0;pipdeptree
+: 1696175255:0;sudo pip uninstall pycairo --break-system-packages
+: 1696175286:0;sudo pip uninstall pycparser --break-system-packages
+: 1696175289:0;sudo pip uninstall pycairo --break-system-packages
+: 1696175291:0;pipdeptree
+: 1696175313:0;sudo pip uninstall typing-extensions --break-system-packages
+: 1696175324:0;sudo pip uninstall pydantic-core --break-system-packages
+: 1696175334:0;sudo pip uninstall ranger-fm --break-system-packages
+: 1696175344:0;pipdeptree
+: 1696175392:0;sudo pip uninstall PyGObject --break-system-packages
+: 1696175401:0;sudo pip uninstall pynvml --break-system-packages
+: 1696175628:0;bmenu
+: 1696175690:0;pipdeptree
+: 1696175807:0;sudo pip uninstall attrs --break-system-packages
+: 1696175809:0;pipdeptreeç
+: 1696175811:0;pipdeptree
+: 1696175830:0;bmenu
+: 1696176019:0;pipdeptree
+: 1696176160:0;trash -h
+: 1696176165:0;rm -h
+: 1696176186:0;npm -V
+: 1696176189:0;npm -v
+: 1696176437:0;e
+: 1698359345:0;bmenu
+: 1698359437:0;ping google.com
+: 1698360800:0;e
+: 1699044115:0;bmenu
+: 1699044172:0;yay -Syyu
+: 1702342772:0;ping 
+: 1702342775:0;ping google.com
+: 1702342782:0;e
+: 1702342807:0;ls Documents/ç
+: 1702342811:0;ls Documents/
+: 1702342818:0;ls
+: 1702342821:0;ll
+: 1702342905:0;ls
+: 1702342907:0;df
+: 1702342965:0;btop
+: 1702342986:0;e
+: 1702343503:0;bmenu
+: 1702343537:0;nvidia-smi
+: 1702343636:0;e
+: 1702343639:0;nvidia-smi
+: 1702343642:0;e
+: 1702343649:0;stacer
+: 1702343670:0;stacer &
+: 1702343675:0;e
+: 1702343903:0;xdg-ninja
+: 1702343944:0;ls .pki
+: 1702343991:0;mv .pki/* "$XDG_DATA_HOME"/pki
+: 1702344023:0;diff .pki/nssdb/* .local/share/pki/nssdb/*
+: 1702344032:0;diff .pki/nssdb/ .local/share/pki/nssdb/
+: 1702345877:0;e
+: 1702346046:0;zinit -h
+: 1702346053:0;zi -h
+: 1702346100:0;zi completions
+: 1702346107:0;zi clist
+: 1702346139:0;e
+: 1702346269:0;ranger
+: 1702346272:0;e
+: 1702346283:0;gdu
+: 1702346295:0;gdu /
+: 1702346315:0;e
+: 1702346809:0;btop
+: 1702346814:0;e
+: 1702346824:0;yay -Syyu
+: 1702346837:0;docker
+: 1702346854:0;act
+: 1702347097:0;cd Documents/development/
+: 1702347097:0;ls
+: 1702347106:0;cd codewars-solver
+: 1702347107:0;ls
+: 1702347108:0;ll
+: 1702347112:0;act
+: 1702347139:0;systemctl status docker
+: 1702347146:0;sudo systemctl start docker
+: 1702347149:0;systemctl status docker
+: 1702347152:0;act
+: 1702347178:0;rm /home/yisus_christ/.actrc
+: 1702347179:0;act
+: 1702347196:0;sudo act
+: 1702347474:0;code .
+: 1702347535:0;cod3e
+: 1702347536:0;code
+: 1702347562:0;code .
+: 1702347592:0;act
+: 1702347595:0;sudo act
+: 1702347724:0;python -V
+: 1702347742:0;pip install --upgrade pip
+: 1702347750:0;pipx list
+: 1702347762:0;pipx upgrade-all
+: 1702347788:0;pipx install cyberdrop-dl
+: 1702347814:0;cyberdrop-dl -V
+: 1702347817:0;cyberdrop-dl -h
+: 1702347829:0;pip install --upgrade pip
+: 1702347842:0;pip install --upgrade pip --break-system-packages
+: 1702347848:0;pip -V
+: 1702347852:0;poetry 
+: 1702347866:0;ls
+: 1702347873:0;poetry shell
+: 1702347874:0;emulate bash -c '. /home/yisus_christ/.cache/pypoetry/virtualenvs/codewars-solver-s1a1Mqpb-py3.11/bin/activate'
+: 1702347885:0;which python
+: 1702347890:0;make run
+: 1702347898:0;poetry install
+: 1702347907:0;make run
+: 1702347917:0;exit
+: 1702347921:0;e
+: 1702348088:0;bmenu
+: 1702348139:0;code
+: 1702348169:0;nvidia-smi
+: 1702348174:0;nvitop
+: 1702348177:0;e
+: 1702348285:0;rust
+: 1702348289:0;rustup
+: 1702348310:0;rustc -V
+: 1702348324:0;[200~curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+: 1702348329:0;curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+: 1702348366:0;bmenu
+: 1702348375:0;curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+: 1702348396:0;rustc -V
+: 1702348455:0;echo $PATH
+: 1702348498:0;rustc -V
+: 1702348502:0;e
+: 1702371951:0;vainfo
+: 1702372221:0;brave --ignore-gpu-blocklist\
+--enable-gpu-rasterization\
+--enable-zero-copy\
+--enable-features=VaapiVideoDecodeLinuxGL\
+--disable-features=Vulkan
+: 1702372270:0;e
+: 1702421553:0;ping google.com
+: 1702421565:0;e
+: 1702421650:0;echo $GITHUB_USERNAME
+: 1702421672:0;sh -c "$(curl -fsLS get.chezmoi.io)" -- init --apply YisusChrist
+: 1702421875:0;chezmoi
+: 1702421943:0;chezmoi init
+: 1702421946:0;ls
+: 1702421951:0;ll
+: 1702421972:0;ls .local/share/chezmoi
+: 1702421977:0;ll .local/share/chezmoi
+: 1702422508:0;chezmoi help
+: 1702422806:0;l.
+: 1702422817:0;alias l.
+: 1702422832:0;chezmoi add .*
+: 1702422848:0;ll .local/share/chezmoi
+: 1702422865:0;ll .local/share/chezmoi/.git
+: 1702422877:0;ls
+: 1702422880:0;ll
+: 1702422884:0;l.
+: 1702422897:0;chezmoi add .cache
+: 1702422975:0;ls .cache
+: 1702422999:0;less .cache/wofi-drun
+: 1702423006:0;e
+: 1702423206:0;chezmoi cd
+: 1702423208:0;ll
+: 1702423212:0;ls dot_cache
+: 1702423220:0;git status
+: 1702423228:0;git restore .
+: 1702423243:0;ll
+: 1702423259:0;l.
+: 1702423290:0;git remote add https://github.com/YisusChrist/dotfiles.git
+: 1702423332:0;git remote add origin https://github.com/YisusChrist/dotfiles.git
+: 1702423339:0;gst
+: 1702423350:0;git branch arch
+: 1702423372:0;git help
+: 1702423436:0;git branch
+: 1702423451:0;git switch
+: 1702423456:0;git switch main
+: 1702423460:0;git switch origin main
+: 1702423518:0;git status
+: 1702423531:0;rm -rf dot_cache
+: 1702423533:0;ls
+: 1702423535:0;gst
+: 1702423556:0;git remote add origin https://github.com/YisusChrist/dotfiles.git
+: 1702423565:0;git branch main
+: 1702423577:0;git add .
+: 1702423585:0;git commit -m "test"
+: 1702423605:0;git config --global user.email alejandro.gonzalezm02@estudiante.uam.es
+: 1702423614:0;git config --global user.name YisusChrist
+: 1702423617:0;git commit -m "test"
+: 1702423624:0;gst
+: 1702423653:0;code .
+: 1702423722:0;gf
+: 1702423731:0;alias gf
+: 1702423732:0;e
+: 1702423812:0;gf
+: 1702423845:0;git remote add origin https://github.com/YisusChrist/dotfiles
+: 1702423941:0;gst
+: 1702423986:0;gb arch
+: 1702424019:0;/usr/bin/git -C "/home/yisus_christ/.local/share/chezmoi" -c "core.editor=code --wait --reuse-window" branch arch origin/main
+: 1702424024:0;gst
+: 1702424043:0;gf
+: 1702424115:0;ls
+: 1702424117:0;ll
+: 1702424119:0;ls
+: 1702424128:0;chezmoi add .config
+: 1702424138:0;ls
+: 1702424187:0;rm -rf assets
+: 1702424208:0;rm 
+: 1702424210:0;ls
+: 1702424212:0;ll
+: 1702424222:0;cat README.md
+: 1702424240:0;neofetch
+: 1702424325:0;cd ~
+: 1702424326:0;ls
+: 1702424328:0;e
+: 1702424333:0;ls
+: 1702424336:0;neofetch
+: 1702424345:0;cd Desktop
+: 1702424346:0;ls
+: 1702424352:0;gcl https://github.com/YisusChrist/dotfiles
+: 1702424372:0;git branch arch
+: 1702424378:0;cd dotfiles
+: 1702424379:0;git branch arch
+: 1702424403:0;code .
+: 1702424578:0;e
+: 1702424924:0;m .config/hypr/hyprland.conf
+: 1702424983:0;e
+: 1702425020:0;cp .* Desktop/dotfiles
+: 1702425025:0;cp -r .* Desktop/dotfiles
+: 1702425110:0;e
+: 1702425120:0;cd Desktop/dotfiles
+: 1702425122:0;l.
+: 1702425131:0;xdg-ninja
+: 1702425154:0;m $ZDOTDIR/.zshenv
+: 1702425201:0;mkdir "$XDG_CONFIG_HOME/act"
+: 1702425211:0;mv .actrc "$XDG_CONFIG_HOME/act/actrc"
+: 1702425214:0;l.
+: 1702425238:0;code .
+: 1702425262:0;ll
+: 1702425298:0;ls $HOME/Desktop
+: 1702425304:0;l.
+: 1702425311:0;l. $HOME
+: 1702425320:0;l.
+: 1702425324:0;xdg-ninja
+: 1702425377:0;mv .rustup/* "$XDG_DATA_HOME"/rustup
+: 1702425391:0;mkdir -p "$XDG_DATA_HOME"/rustup
+: 1702425394:0;mv .rustup/* "$XDG_DATA_HOME"/rustup
+: 1702425398:0;ls "$XDG_DATA_HOME"/rustup
+: 1702425403:0;l.
+: 1702425414:0;ls .rustup
+: 1702425420:0;rm .rustup
+: 1702425423:0;xdg-ninja
+: 1702425449:0;ls $XDG_CONFIG_HOME/git
+: 1702425458:0;less .gitconfig
+: 1702425485:0;mv .gitconfig $XDG_CONFIG_HOME/git/config
+: 1702425491:0;md $XDG_CONFIG_HOME/git/config
+: 1702425495:0;mv .gitconfig $XDG_CONFIG_HOME/git/config
+: 1702425518:0;source $ZDOTDIR/.zshrc
+: 1702425538:0;ls $XDG_CONFIG_HOME/git
+: 1702425540:0;ls $XDG_CONFIG_HOME/git/config
+: 1702425546:0;ls
+: 1702425548:0;l.
+: 1702425600:0;e
+: 1702425630:0;cd Desktop/dotfiles
+: 1702425632:0;gf
+: 1702425653:0;cd ¨
+: 1702425661:0;cd ~
+: 1702425664:0;cd Documents/development/
+: 1702425671:0;cd codewars-solver
+: 1702425673:0;gf
+: 1702425692:0;rmdir $XDG_CONFIG_HOME/git/config
+: 1702425701:0;ll $XDG_CONFIG_HOME/git/config
+: 1702425720:0;mv $XDG_CONFIG_HOME/git/config/.gitconfig $XDG_CONFIG_HOME/git
+: 1702425725:0;ll $XDG_CONFIG_HOME/git/config
+: 1702425729:0;rmdir $XDG_CONFIG_HOME/git/config
+: 1702425751:0;mv $XDG_CONFIG_HOME/git/.gitconfig $XDG_CONFIG_HOME/git/config
+: 1702425756:0;ll $XDG_CONFIG_HOME/git
+: 1702425762:0;cat $XDG_CONFIG_HOME/git/config
+: 1702425765:0;ls
+: 1702425767:0;gf
+: 1702425775:0;cd ~
+: 1702425778:0;ls
+: 1702425780:0;source $ZDOTDIR/.zshrc
+: 1702425784:0;xdg-ninja
+: 1702425800:0;ls
+: 1702425803:0;l.
+: 1702425827:0;mv .actrc "$XDG_CONFIG_HOME/act/actrc"
+: 1702425830:0;act
+: 1702425840:0;cd Documents/development/
+: 1702425841:0;cd codewars-solver
+: 1702425842:0;act
+: 1702425849:0;sudo systemctl start docker
+: 1702425855:0;act
+: 1702425858:0;sudo act
+: 1702425874:0;l.
+: 1702425891:0;diff .profile*
+: 1702425919:0;cat .profile
+: 1702425942:0;rm .bashrc.bak
+: 1702425946:0;l.
+: 1702425953:0;ls .vscode-oss
+: 1702425957:0;ls .vscode-oss/extensions
+: 1702425964:0;less .vscode-oss/extensions/extensions.json
+: 1702425972:0;less .vscode-oss/argv.json
+: 1702425977:0;xdg-ninja
+: 1702425993:0;cd ..
+: 1702425996:0;cd xdg-ninja-report
+: 1702425997:0;ls
+: 1702426003:0;poetry init
+: 1702426010:0;ls
+: 1702426030:0;less xdg-ninja-report.py
+: 1702426043:0;poetry add rich
+: 1702426052:0;poetry run xdg-ninja-report.py
+: 1702426057:0;poetry run python xdg-ninja-report.py
+: 1702426069:0;poetry add string-grab
+: 1702426075:0;poetry run python xdg-ninja-report.py
+: 1702426115:0;e
+: 1702426448:0;cp -r .* Desktop/dotfiles

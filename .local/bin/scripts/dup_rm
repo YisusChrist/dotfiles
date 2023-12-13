@@ -1,0 +1,102 @@
+#!/usr/bin/env bash
+
+# Remove files with same names but different extension
+# It is specified to remove pictures ".jpg"
+# Example:
+#    Before execution:
+#    - file1 = <name>.jpg
+#    - file2 = <name>.mp4
+#    After execution:
+#    - file2 = <name>.mp4
+
+# Using external library for error-handling
+# https://github.com/niieani/bash-oo-framework
+
+## BOOTSTRAP ##
+source "$( cd "${BASH_SOURCE[0]%/*}" && pwd )/bash-oo-framework/lib/oo-bootstrap.sh"
+
+#! Fix errors: https://github.com/niieani/bash-oo-framework#how-to-use
+
+## MAIN ##
+import util/log
+import util/exception
+import util/tryCatch
+
+# enable basic logging for this file by declaring a namespace
+namespace myApp
+
+# make the Log method direct everything in the namespace 'myApp' to the log handler called DEBUG
+Log::AddOutput myApp DEBUG
+
+# Check if a path argument is provided
+if [ -z "$1" ]; then
+    throw "Please provide a path as an argument."
+fi
+
+# Check if path provided exists and is a directory
+if [ ! -d "$1" ]; then
+    throw "The path provided does not exist or is not a directory."
+fi
+
+# Define extension for files to remove and files to keep
+remove_ext=".jpg"
+
+echo "Searching for duplicate files..."
+
+# Clean duplicated files with same name and extension
+# -r : recursively search for files in subdirectories
+# -d : delete duplicate files
+# -N : preserve the first file, remove subsequent duplicates
+# TODO: Fix error on try-catch
+try {
+    num_removed=$(fdupes -r -d -N $1 | grep "[-]" | wc -l)
+    echo "Removed $num_removed duplicate files with fdupes."
+} catch {
+    Exception::PrintException "${__EXCEPTION__[@]}"
+}
+
+# Initialize counter for number of files removed
+total_counter=0
+
+echo "Searching for directories..."
+
+# Find all directories at depth level 1 in the provided path
+for dir in $(find "$1" -mindepth 1 -maxdepth 1 -type d);
+do
+    echo " [*] Processing directory $dir"
+  
+    # Initialize counter for number of files removed in this directory
+    dir_counter=0
+
+    # Find all unique file names without extensions in this directory
+    for i in $(find "$dir" -exec bash -c 'basename "$0" ".${0##*.}"' {} \; | sort | uniq --repeate);
+    do
+        # Find all files with the same base name as $i and a .jpg extension
+        # Sort them by filename and select only the ones ending in ".jpg"
+        # Store the results in variable $j
+        j=$(find "$dir" -name "$i*" -printf '%p\n' | sort -n | grep "$remove_ext")
+
+        # If files with .jpg extension were found, remove them and increment the counters
+        if [ -n "$j" ]; then
+            try {
+                rm "$j"
+                counter=$(echo "$j" | wc -l)
+                dir_counter=+$((dir_counter+counter))
+                total_counter=$((total_counter+counter))
+            } catch {
+                Exception::PrintException "${__EXCEPTION__[@]}"
+                exit $?
+            }
+        fi
+    done
+
+    # Print number of files removed in this directory if there were any
+    if [ "$dir_counter" -gt 0 ]; then
+        echo "     Removed $dir_counter files"
+    else
+        echo "     Nothing to remove"
+    fi
+done
+
+# Print total number of files removed
+echo "Total files removed: $total_counter."

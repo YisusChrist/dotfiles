@@ -1,0 +1,97 @@
+#!/bin/bash
+
+# Nvitop: https://github.com/XuehaiPan/nvitop
+# Gpustat: https://github.com/wookayin/gpustat
+# 
+
+# Script name
+script_name=$(basename "$0")
+
+# Script version
+version="1.0"
+
+# Update time for the monitor
+time=0.1
+
+# Function to display help information and usage
+display_help() {
+  echo "Usage: $script_name [-h] [-v]"
+  echo "Options:"
+  echo "  -h  Display help information"
+  echo "  -v  Display script version"
+  echo
+  echo "This script allows you to monitor GPU usage using different commands."
+  echo "Choose the desired command by entering the corresponding number."
+  echo
+  echo "Available options:"
+  echo "  1. nvitop"
+  echo "  2. gpustat"
+  echo "  3. nvidia-smi"
+  exit 0
+}
+
+# Function to display script version
+display_version() {
+  echo "$script_name version: $version"
+  exit 0
+}
+
+# Process command line options
+while getopts "hv" opt; do
+  case ${opt} in
+    h)
+      display_help
+      ;;
+    v)
+      display_version
+      ;;
+    \?)
+      echo "Invalid option: -$OPTARG" >&2
+      exit 1
+      ;;
+  esac
+done
+
+# Step 1: Ask the user for the desired command
+echo "Which GPU monitoring command would you like to use?"
+echo "1. nvitop"
+echo "2. gpustat"
+echo "3. nvidia-smi"
+read -p "Enter the number corresponding to the desired command: " choice
+
+# Step 2: Check the availability of the selected command
+case $choice in
+  1)
+    if ! command -v nvitop >/dev/null; then
+      echo "nvitop is not installed. You can install it by running: pip3 install git+https://github.com/XuehaiPan/nvitop.git"
+      exit 1
+    fi
+    command="nvitop -m"
+    ;;
+  2)
+    if ! command -v gpustat >/dev/null; then
+      echo "gpustat is not installed. You can install it by running: pip3 install gpustat"
+      exit 1
+    fi
+    command="watch -n $time -c gpustat -cp --color"
+    ;;
+  3)
+    if ! command -v nvidia-smi >/dev/null; then
+      echo "nvidia-smi is not installed. Please make sure you have the NVIDIA GPU driver installed."
+      exit 1
+    fi
+    command="watch -n $time nvidia-smi"
+    ;;
+  *)
+    echo "Invalid choice. Please enter a valid number."
+    exit 1
+    ;;
+esac
+
+
+# Clear the terminal screen
+#printf "\033c"
+clear
+
+# Step 3: Run the selected command
+eval "$command"

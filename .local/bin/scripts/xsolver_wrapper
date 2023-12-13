@@ -1,0 +1,12 @@
+#!/bin/bash
+
+# @file     xsolver_wrapper
+# @date     24/03/2023
+# @author   Julio Cabria
+# @deps     xsolver(system), xdotool(system)
+
+xsolver 
+ret=$?
+if [ $ret -eq 0 ]; then
+    xdotool key ctrl+v
+fi

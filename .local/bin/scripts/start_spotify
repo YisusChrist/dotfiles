@@ -1,0 +1,10 @@
+#!/usr/bin/bash
+
+# Reference: https://gist.github.com/chaitunya/4cf0788283f324394efc361443aee064
+
+pgrep -f /opt/spotify/spotify
+if [ $? = 1 ]; then
+    spotify $*
+else
+    wmctrl -x -a spotify
+fi

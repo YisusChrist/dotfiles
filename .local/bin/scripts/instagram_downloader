@@ -1,0 +1,201 @@
+#!/usr/bin/env python3
+
+import os
+from urllib.parse import urljoin
+
+import validators  # pip install validators
+import wget  # pip install wget
+from bs4 import BeautifulSoup
+from pyfiglet import Figlet  # pip install pyfiglet
+from termcolor import cprint  # pip install termcolor
+
+from form_extractor import get_all_forms, get_form_details, session
+
+private_downloader = "https://instafinsta.com/private-downloader"
+public_downloader = "https://instafinsta.com/insta-stories-download"
+download_path = "/run/media/yisus_christ/Data/DCIM/Images/Instagram/"
+html_file = "/home/yisus_christ/.local/bin/.Scripts/download.html"
+
+count = 0
+total = 0
+
+print_red = lambda x: cprint(x, "red")
+print_green = lambda x: cprint(x, "green")
+print_blue = lambda x: cprint(x, "blue")
+
+
+def get_url() -> str:
+    """
+    Prompts the user to enter a valid URL for the stories and returns it.
+
+    Returns:
+        str: The valid URL for the stories.
+    """
+    try:
+        url = input("Enter the url of the stories: ")
+        if len(url) == 0 or validators.url(url) is False:
+            print("Error, you must specify a valid url")
+            exit()
+    except KeyboardInterrupt:
+        exit()
+
+    return url
+
+
+def get_account():
+    """
+    Gets the account name from user input
+
+    Returns:
+        The account name
+    """
+    try:
+        account = input("Enter the name of the account: ")
+        if len(account) == 0:
+            print("Error, you must specify an account name")
+            exit()
+    except KeyboardInterrupt:
+        exit()
+
+    return account
+
+
+def check_directory(path):
+    """
+    Checks wether a directory exists or not
+
+    Args:
+        path: Full path of the directory
+    """
+    if not os.path.exists(path):
+        os.makedirs(path)
+
+
+def process_file(filename):
+    """
+    Checks if file already exists and handles it
+
+    Args:
+        filename: Name of the file downloaded
+    """
+    if filename.endswith(".webp"):
+        new_file = filename.replace("webp", "jpg")
+        if os.path.exists(new_file):
+            os.remove(filename)
+        else:
+            os.rename(filename, new_file)
+
+    if "(1)" in filename:
+        print_blue("  Dup! Removing...")
+        os.remove(filename)
+        return
+
+    print_green("  [OK]")
+
+
+def download(link, path):
+    global count
+
+    try:
+        filename = wget.download(link, out=path)
+        process_file(filename)
+
+        count += 1
+
+    except Exception as e:
+        print_red(" >> Exception (" + str(e) + ")")
+        print("Unable to download file from " + link)
+
+
+def form_submit(url):
+    all_forms = get_all_forms(public_downloader)
+    form_details = get_form_details(all_forms[0])
+
+    data = {}
+    for input_tag in form_details["inputs"]:
+        if input_tag["type"] == "hidden":
+            # if it's hidden, use the default value
+            data[input_tag["name"]] = input_tag["value"]
+
+        elif input_tag["type"] != "submit":
+            # all others except submit, prompt the user to set it
+            data[input_tag["name"]] = url
+
+    # join the url with the action (form request URL)
+    url = urljoin(private_downloader, form_details["action"])
+    if form_details["method"] == "post":
+        res = session.post(url, data=data)
+    elif form_details["method"] == "get":
+        res = session.get(url, params=data)
+
+    # the below code is only for replacing relative URLs to absolute ones
+    return res.content
+
+
+# TODO: Check if an account is private or public
+def is_private(account):
+    return True
+
+
+def get_media(src_url, account, private=True):
+    """
+    Downloads all the media of the stories specified
+
+    Args:
+        account: Name of the account where media will be saved
+    """
+    global count, total
+    links = []
+
+    if private:
+        with open(html_file) as f:
+            html = f.read()
+    else:
+        html = form_submit(src_url)
+
+    html_page = BeautifulSoup(html, "html.parser")
+
+    """
+    print(html_page)
+    input()
+    """
+
+    # Save found videos
+    for link in html_page.find_all("source"):
+        current_link = link.get("src").split("amp;", 1)[0]
+        if ".mp4" in current_link:
+            links.append(current_link)
+
+    # Save found pictures
+    for link in html_page.find_all("a"):
+        current_link = link.get("href").replace("&amp;", "&")
+        if "https://instagram." in current_link:
+            links.append(current_link)
+
+    path = download_path + account
+    check_directory(path)
+    total = len(links)
+
+    for link in links:
+        download(link, path)
+
+
+def main():
+    f = Figlet(font="standard")
+    print_green(f.renderText("Instagram Downloader"))
+
+    account = get_account()
+
+    priv = is_private(account)
+    if priv is False:
+        url = get_url()
+    else:
+        url = None
+
+    get_media(url, account, priv)
+
+    print("\nFinished... Downloaded {}/{} files".format(count, total))
+
+
+if __name__ == "__main__":
+    main()
