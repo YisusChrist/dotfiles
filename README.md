@@ -32,14 +32,33 @@ These dotfiles are not intended to be used as a daily driving medium, I have onl
 
 <p align="center"> <img src="https://raw.githubusercontent.com/archcraft-os/.github/main/profile/assets/logo.gif" align="center" width="250"> </p>
 
+## 4. [Arch Linux](https://github.com/YisusChrist/dotfiles/tree/arch)
+
+<img src="https://img.shields.io/badge/Maintained:-No! (Only bugfixes)-red?style=flat">
+<img src="https://img.shields.io/badge/Health:-Optimized%20(Suitable%20for%20daily%20use)-brightgreen?style=flat">
+<img src="https://img.shields.io/badge/RAM Usage:-~800MB-brightgreen?style=flat">
+
+<p align="center"> <img src="https://logos-download.com/wp-content/uploads/2020/06/Arch_Linux_Logo.png" align="center" width="750"> </p>
+
 ## Support
 
 You can always show your support towards these rices by donating me, as this takes a lot of time and hardwork, thank you for using these dotfiles!
 
 <b>Ko-Fi:</b> <br>
-[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)]() <br>
+<a href="https://ko-fi.com/yisuschrist" target="_blank">
+  <img alt="Buy Me a Coffee at ko-fi.com" src="https://storage.ko-fi.com/cdn/kofi3.png" border="0" height="36" />
+</a>
 
 <b>Librepay:</b> <br>
-<a href=""><img alt="Donate using Liberapay" src="https://liberapay.com/assets/widgets/donate.svg"></a>
+<a href="https://liberapay.com/YisusChrist/donate" target="_blank">
+  <img alt="Donate using Liberapay" src="https://liberapay.com/assets/widgets/donate.svg" height="36" />
+</a>
 
-Note: Forked / Inspired by [Syndrizzle](https://github.com/Syndrizzle/hotfiles)
+<b>Buy Me A Coffee:</b> <br>
+<a href="https://www.buymeacoffee.com/YisusFuckingChrist" target="_blank">
+  <img src="https://cdn.buymeacoffee.com/buttons/v2/default-orange.png" alt="Buy Me A Coffee" height="36"/>
+</a>
+
+## Credits
+
+This repository designed was highly inspired by [Syndrizzle](https://github.com/Syndrizzle)'s [hotfiles](https://github.com/Syndrizzle/hotfiles)
