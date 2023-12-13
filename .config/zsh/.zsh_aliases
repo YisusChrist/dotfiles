@@ -2,12 +2,12 @@
 alias zshconfig='xdg-open $ZDOTDIR/.zshrc'
 alias ohmyzsh='thunar $ZSH'
 
-# Replace ls with exa
-alias ls='exa --color=always --group-directories-first --icons' # preferred listing
-alias la='exa -a --color=always --group-directories-first --icons'  # all files and dirs
-alias ll='exa -la --color=always --group-directories-first --icons'  # long format
-alias lt='exa -aT --color=always --group-directories-first --icons' # tree listing
-alias l.='exa -ald --color=always --group-directories-first --icons .*' # show only dotfiles
+# Replace ls with lsd
+alias ls='lsd --color=always --group-directories-first' # preferred listing
+alias la='lsd -A --color=always --group-directories-first'  # all files and dirs
+alias ll='lsd -la --color=always --group-directories-first --header'  # long format
+alias lt='lsd --tree --color=always --group-directories-first' # tree listing
+alias l.='lsd -ald --color=always --group-directories-first --header .*' # show only dotfiles
 
 # Personal
 alias e='exit'
