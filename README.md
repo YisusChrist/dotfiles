@@ -22,6 +22,10 @@ These dotfiles are not intended to be used as a daily driving medium, I have onl
 - **Some love** as the essence!
 
 ## Screenshots:
+![Arch V1](https://i.imgur.com/dVdTuNR.png)
+![Arch V2](https://i.imgur.com/qkNsc0l.png)
+![Arch V3](https://i.imgur.com/Ap8OjCi.png)
+![Arch V4](https://i.imgur.com/3vF56oY.png)
 
 ## TODO:
 
