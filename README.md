@@ -61,4 +61,4 @@ You can always show your support towards these rices by donating me, as this tak
 
 ## Credits
 
-This repository designed was highly inspired by [Syndrizzle](https://github.com/Syndrizzle)'s [hotfiles](https://github.com/Syndrizzle/hotfiles)
+This repository design was highly inspired by [Syndrizzle](https://github.com/Syndrizzle)'s [hotfiles](https://github.com/Syndrizzle/hotfiles)
