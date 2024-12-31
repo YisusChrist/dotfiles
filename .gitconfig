@@ -1,0 +1,23 @@
+[user]
+	email = agelrenorenardo@gmail.com
+	name = YisusChrist
+[init]
+	defaultBranch = main
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[core]
+	pager = diff-so-fancy | less --tabs=4 -RF
+[interactive]
+	diffFilter = diff-so-fancy --patch
+[alias]
+	tree = log --oneline --graph --all --decorate
+	bst = for-each-ref --format="%(refname:short) %(upstream:track) %(upstream:remotename)" refs/heads
+[credential "helperselector"]
+	selected = manager
+[safe]
+	directory = D:/Pictures/Wallpapers/variety
+	directory = D:/Pictures/Wallpapers/
+	directory = D:/Pictures/Wallpapers/*
