@@ -18,6 +18,11 @@
             "keys": "ctrl+v"
         },
         {
+            "command": "find",
+            "id": "User.find",
+            "keys": "ctrl+shift+f"
+        },
+        {
             "command": 
             {
                 "action": "splitPane",
@@ -26,11 +31,6 @@
             },
             "id": "User.splitPane.A6751878",
             "keys": "alt+shift+d"
-        },
-        {
-            "command": "find",
-            "id": "User.find",
-            "keys": "ctrl+shift+f"
         }
     ],
     "copyFormatting": "none",
